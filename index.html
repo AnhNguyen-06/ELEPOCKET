@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login ELEPOCKET</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/ava.png">
+
+  <!-- Google Font: Quicksand -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+        <img src="images/ava.png" alt="Logo" class="logo">
+        <span class="site-name">ELEPOCKET</span>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button type="button">🔍</button>
+    </div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Quick Test</a>
+      <a href="#">Blog</a>
+      <a href="#" class="signup">Sign in</a>
+    </nav>
+  </header>
+
+  <div class="login-form">
+    <h2>Đăng nhập</h2>
+    <form>
+      <label>Email:</label>
+      <input type="email" placeholder="Email">
+      
+      <label>Mật khẩu:</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Mật khẩu">
+        <span id="togglePassword">👁</span>
+      </div>
+      
+      <div class="options">
+        <label><input type="checkbox"> Lưu đăng nhập</label>
+        <a href="#">Quên mật khẩu?</a>
+      </div>
+      
+      <button type="submit">Đăng nhập</button>
+    </form>
+    <p class="register-link">Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

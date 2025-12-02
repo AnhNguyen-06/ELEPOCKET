@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Independent Test</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/ava.png">
+        <link rel="stylesheet" href="style1.css">
+        <script src="script.js" defer></script>
+        <script src="analyzing/half-independent.js" defer></script>
+    </head>
+    <body class="body1">
+        <header class="navbar">
+            <div class="logo-name">
+                <img src="images/ava.png" alt="Logo ELEPOCKET" class="logo">
+                <a href="/home.html">
+                    <span class="name">ELEPOCKET</span>
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="button"></button>
+            </div>
+            <nav class="menu">
+                <a href="/home.html">Home</a>
+                <a href="/aboutus.html">About us</a>
+                <a href="/quicktest.html" class="quicktest">Quick Test</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/signup.html">Sign up</a>
+            </nav>
+        </header>
+        <div class="container">
+            <h3 class="main-test">Type of spending test</h3>
+            <div class="question-box">
+                <section class="income">
+                    <div class="question1" id="q1">1</div>
+                    <p>Mỗi tháng, bạn nhận được trợ cấp/tiền tiêu vặt trong khoảng nào dưới đây?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>2.500.000</span>
+                            <span>5.000.000</span>
+                        </div>
+                    </div>
+                    <div class="question2" id="q2">2</div>
+                    <p>Mỗi tháng, bạn nhận được khoản thu nhập từ những nguồn như làm thêm, kinh doanh, đầu tư,... khoảng bao nhiêu?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>2.500.000</span>
+                            <span>5.000.000</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="expenditure">
+                    <!--NEEDS-->
+                    <div class="question3" id="q3">3</div>
+                    <p>Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các loại sinh hoạt phí (tiền nhà, điện, nước,...)?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>2.500.000</span>
+                            <span>5.000.000</span>
+                        </div>
+                    </div>
+                    <div class="question4" id="q4">4</div>
+                    <p>Mỗi tháng, bạn thường chi khoảng bao nhiêu cho việc ăn uống?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>1.500.000</span>
+                            <span>3.000.000</span>
+                        </div>
+                    </div>
+                    <div class="question5" id="q5">5</div>
+                    <p>Mỗi tháng, bạn thường chi khoảng bao nhiêu cho việc đi lại?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>1.500.000</span>
+                            <span>3.000.000</span>
+                        </div>
+                    </div>
+                    <!--WANTS-->
+                    <div class="question6" id="q6">6</div>
+                    <p>Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các dịch vụ có trả phí (Spotify, Netflix, khóa học online, tài liệu học tập...)?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="1000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>1.000.000</span>
+                            <span>2.000.000</span>
+                        </div>
+                    </div>
+                    <div class="question7" id="q7">7</div>
+                    <p>Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các hoạt động mua sắm quần áo, đồ dùng học tập, quà tặng, mỹ phẩm,...?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>1.500.000</span>
+                            <span>3.000.000</span>
+                        </div>
+                    </div>
+                    <div class="question8" id="q8">8</div>
+                    <p>Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các hoạt động vui chơi, hẹn hò cùng bạn bè?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>1.500.000</span>
+                            <span>3.000.000</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="savings">
+                    <div class="question9" id="q9">9</div>
+                    <p>Mỗi tháng bạn tiết kiệm được khoảng bao nhiêu?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>2.500.000</span>
+                            <span>5.000.000</span>
+                        </div>
+                    </div>
+                    <div class="question10" id="q10">10</div>
+                    <p>Mỗi tháng, bạn chi khoảng bao nhiêu cho việc đầu tư, bỏ vốn kinh doanh cá nhân?</p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
+                        <span class="range-value">800.000</span>
+                        <div class="slider-labels">
+                            <span>0</span>
+                            <span>2.500.000</span>
+                            <span>5.000.000</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="question-choice">
+            <h5>TEST</h5>
+            <h2>Type of spending test</h2>
+            <button class="submit-btn">Submit</button>
+            <div class="grid">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>10</button>
+            </div>
+        </div>
+        <footer class="contact-info">
+            <div class="contact-left">
+                <div class="logo-name">
+                    <img src="images/white-ava.png  " alt="Logo ELEPOCKET" class="logo">
+                    <a href="/home.html">
+                        <span class="name">ELEPOCKET</span>
+                    </a>
+                </div>
+                <div class="phone-email">
+                    <p>Contact: 090 450 1805 (B.Tran) | 070 568 2288 (Q.Anh)</p>
+                    <p>Email: <a href="mailto:elepocket@gmail.com">elepocket@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-center">
+                <h3>Contact info</h3>
+            </div>
+            <div class="contact-right">
+                <input type="text" placeholder="Search...">
+                <nav class="menu">
+                    <a href="/home.html">Home</a> |
+                    <a href="/aboutus.html">About us</a> |
+                    <a href="/quicktest.html">Quick Test</a> |
+                    <a href="/blog.html">Blog</a> |
+                    <a href="/signup.html">Sign up</a>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
