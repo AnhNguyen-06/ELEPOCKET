@@ -1,58 +1,39 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login ELEPOCKET</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="images/ava.png">
-
-  <!-- Google Font: Quicksand -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Mozilla+Headline&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo-container">
-        <img src="images/ava.png" alt="Logo" class="logo">
-        <span class="site-name">ELEPOCKET</span>
-    </div>
-    <div class="search-box">
-      <input type="text" placeholder="Search...">
-      <button type="button">🔍</button>
-    </div>
-    <nav class="menu">
-      <a href="#">Home</a>
-      <a href="#">About us</a>
-      <a href="#">Quick Test</a>
-      <a href="#">Blog</a>
-      <a href="#" class="signup">Sign in</a>
-    </nav>
-  </header>
-
-  <div class="login-form">
-    <h2>Đăng nhập</h2>
-    <form>
-      <label>Email:</label>
-      <input type="email" placeholder="Email">
-      
-      <label>Mật khẩu:</label>
-      <div class="password-wrapper">
-        <input type="password" id="password" placeholder="Mật khẩu">
-        <span id="togglePassword">👁</span>
-      </div>
-      
-      <div class="options">
-        <label><input type="checkbox"> Lưu đăng nhập</label>
-        <a href="#">Quên mật khẩu?</a>
-      </div>
-      
-      <button type="submit">Đăng nhập</button>
-    </form>
-    <p class="register-link">Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/ava.png">
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="logo-name">
+                <img src="images/ava.png" alt="Logo ELEPOCKET" class="logo">
+                <a href="/index.html">
+                    <span class="name">ELEPOCKET</span>
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="button"></button>
+            </div>
+            <nav class="menu">
+                <a href="/index.html" class="home">Home</a>
+                <a href="/aboutus.html">About us</a>
+                <a href="/quicktest.html">Quick Test</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/signup.html">Sign up</a>
+            </nav>
+        </header>
+        <div class="center">
+            <h1>
+                <a href="/index.html">ELEPOCKET</a>
+            </h1>
+            <h3>Smart Budget - Sparks&nbsp;Power</h3>
+            <h5>What is your type of spending?</h5>
+            <a href="/quicktest.html" class="btn">Get started</a>
+        </div>
+    </body>
 </html>
