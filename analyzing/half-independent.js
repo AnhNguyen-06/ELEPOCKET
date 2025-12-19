@@ -62,28 +62,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // Nhóm 1: Áp lực tài chính (Needs cao bất thường so với nhóm này)
     // Vì không mất tiền nhà, nếu Needs > 60% là rất cao (Benchmark chỉ 40%)
     if (percentNeeds >= 65) {
-      resultType = "Áp lực tài chính (Stressed)";
+      resultType = "Áp lực tài chính";
       resultDesc = "Cảnh báo: Chi phí thiết yếu của bạn đang chiếm quá cao (>65%) dù bạn đang có lợi thế (như sống cùng gia đình). Có thể bạn đang chi quá nhiều cho ăn uống sang trọng hoặc đi lại. Hãy rà soát lại để tận dụng lợi thế tiết kiệm giai đoạn này.";
     } 
     // Nhóm 2: Tiết kiệm (Savings vượt trội so với chuẩn 20%)
     else if (percentSavings >= 35) {
-      resultType = "Tiết kiệm xuất sắc (High Saver)";
+      resultType = "Tiết kiệm xuất sắc";
       resultDesc = "Tuyệt vời! Bạn đang tận dụng rất tốt giai đoạn 'Nửa độc lập' này để tích lũy. Với mức tiết kiệm >= 35% (cao hơn chuẩn 20%), bạn sẽ sớm có một khoản vốn lớn cho các mục tiêu tương lai (mua nhà riêng, khởi nghiệp...).";
     } 
     // Nhóm 3: Phung phí (Wants quá cao - Party too much)
     // Benchmark Wants là 40%, nếu lên 60% là quá đà
     else if (percentWants >= 60 || percentSavings < 5) {
-      resultType = "Phung phí (Overspending)";
+      resultType = "Phung phí";
       resultDesc = "Bạn đang 'vung tay quá trán' cho các sở thích cá nhân. Việc không phải lo gánh nặng nhà cửa khiến bạn dễ dãi với ví tiền của mình (>60% cho hưởng thụ). Hãy cẩn thận, thói quen này sẽ rất khó bỏ khi bạn ra ở riêng.";
     } 
     // Nhóm 4: Hơi vượt mức (Savings dưới chuẩn 20%)
     else if (percentSavings < 15) {
-      resultType = "Cần điều chỉnh (Under-saving)";
+      resultType = "Hơi phung phí";
       resultDesc = "Mức tiết kiệm của bạn hơi thấp (<15%) so với tiềm năng. Ở giai đoạn này, bạn nên đặt mục tiêu tiết kiệm ít nhất 20% thu nhập vì gánh nặng chi phí chưa lớn. Hãy bớt một chút tiền tiêu vặt để bỏ ống heo nhé.";
     } 
     // Nhóm 5: Hợp lý (Quanh mốc 40/40/20)
     else {
-      resultType = "Hợp lý (Balanced)";
+      resultType = "Hợp lý";
       resultDesc = "Xin chúc mừng! Bạn có một cơ cấu chi tiêu rất thông minh cho giai đoạn bán độc lập. Bạn vừa tận hưởng tuổi trẻ (Wants ~40%) vừa đảm bảo tích lũy kỷ luật (Savings ~20%). Hãy duy trì thói quen này.";
     }
 

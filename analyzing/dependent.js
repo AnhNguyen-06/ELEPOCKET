@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Nhóm 1: Ưu tiên chi tiêu thiết yếu
     if (percentNeeds >= 70) {
-      resultType = "Ưu tiên chi tiêu thiết yếu";
+      resultType = "Ưu tiên thiết yếu";
       resultDesc = "Bạn là người có mức độ chi tiêu ƯU TIÊN CHI TIÊU THIẾT YẾU đó nha! Kết quả cho thấy bạn chi phần lớn ngân sách cho việc ăn uống, đi lại là hoàn toàn hợp lí trong giai đoạn này. Ưu tiên hàng đầu hiện tại là học tập và sức khỏe, nhưng bạn cũng có thể cải thiện thêm chi tiêu bằng cách  đầu tư cho bản thân và rèn luyện thói quen tiết kiệm hiệu quả hơn đó. Cố lên!";
     } 
     // Nhóm 2: Tiết kiệm
