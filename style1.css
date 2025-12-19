@@ -811,7 +811,7 @@ input[type=range] {
     font-weight: 700;
     color: #082a44;
     text-align: center;
-    margin: 70px auto 50px auto;
+    margin: 50px 50px 50px 50px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
@@ -835,7 +835,11 @@ input[type=range] {
     font-weight: 500;
     color: #082a44;
     text-align: justify;
-    margin: 0 70px 0 70px;
+    margin: 0 70px 50px 70px;
+}
+
+#summary b {
+    font-family: TikTok Sans, sans-serif;
 }
 
 #needs, #wants, #savings {

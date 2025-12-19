@@ -6,13 +6,13 @@ if (!data) {
   document.getElementById("resultType").textContent = `Bạn là người chi tiêu ${data.resultType}`;
   document.getElementById("resultDesc").textContent = data.resultDesc;
 
-  document.getElementById("needs").textContent = `${data.needs.toLocaleString("de-DE")}`;
-  document.getElementById("wants").textContent = `${data.wants.toLocaleString("de-DE")}`;
-  document.getElementById("savings").textContent = `${data.savings.toLocaleString("de-DE")}`;
+  document.getElementById("needs").textContent = `${data.needs.toLocaleString("vi-VN")}`;
+  document.getElementById("wants").textContent = `${data.wants.toLocaleString("vi-VN")}`;
+  document.getElementById("savings").textContent = `${data.savings.toLocaleString("vi-VN")}`;
 
-  document.getElementById("needs").style.fontFamily = "'TikTok Sans', sans-serif";
-  document.getElementById("wants").style.fontFamily = "'TikTok Sans', sans-serif";
-  document.getElementById("savings").style.fontFamily = "'TikTok Sans', sans-serif";
+  // document.getElementById("needs").style.fontFamily = "'TikTok Sans', sans-serif";
+  // document.getElementById("wants").style.fontFamily = "'TikTok Sans', sans-serif";
+  // document.getElementById("savings").style.fontFamily = "'TikTok Sans', sans-serif";
 
   Chart.defaults.font.family = "'TikTok Sans', sans-serif";
   Chart.defaults.font.size = 16;
