@@ -85,18 +85,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 5. Hiển thị & Lưu & Chuyển trang
-    alert(
-    `💰 Kết quả phân tích (Phụ thuộc):\n\n` +
-    `Thu nhập: ${income.toLocaleString("vi-VN")} VND\n\n` +
-    `Nhu cầu thiết yếu: ${percentNeeds.toFixed(1)}%  →  ${needs.toLocaleString("vi-VN")} VND\n` +
-    `Nhu cầu mong muốn: ${percentWants.toFixed(1)}%  →  ${wants.toLocaleString("vi-VN")} VND\n` +
-    `Tiết kiệm: ${percentSavings.toFixed(1)}%  →  ${savings.toLocaleString("vi-VN")} VND\n\n` +
-    `📊 Phân loại: ${resultType}\n\n${resultDesc}`
-    );
+    // alert(
+    // `💰 Kết quả phân tích (Phụ thuộc):\n\n` +
+    // `Thu nhập: ${income.toLocaleString("vi-VN")} VND\n\n` +
+    // `Nhu cầu thiết yếu: ${percentNeeds.toFixed(1)}%  →  ${needs.toLocaleString("vi-VN")} VND\n` +
+    // `Nhu cầu mong muốn: ${percentWants.toFixed(1)}%  →  ${wants.toLocaleString("vi-VN")} VND\n` +
+    // `Tiết kiệm: ${percentSavings.toFixed(1)}%  →  ${savings.toLocaleString("vi-VN")} VND\n\n` +
+    // `📊 Phân loại: ${resultType}\n\n${resultDesc}`
+    // );
 
-    sessionStorage.setItem("resultData", JSON.stringify({
-      income, needs, wants, savings, resultType, resultDesc
-    }));
+    // sessionStorage.setItem("resultData", JSON.stringify({
+    //   income, needs, wants, savings, resultType, resultDesc
+    // }));
 
     window.location.href = "results/result-dependent.html";
   });
