@@ -44,7 +44,13 @@ document.addEventListener("DOMContentLoaded", () => {
         `→ Tổng chi tiêu (${sumOfNandW.toLocaleString("vi-VN")} VND) vượt quá thu nhập!\n\n` +
         `📊 Phân loại: ${resultType}\n\n${resultDesc}`
       );
-      return;
+      
+      sessionStorage.setItem("resultData", JSON.stringify({
+        income, needs, wants, savings, resultType, resultDesc
+      }));
+
+      // Chuyển hướng về trang kết quả tương ứng
+      window.location.href = "results/result-dependent.html";
     }
 
     savings = remainingInfo;
