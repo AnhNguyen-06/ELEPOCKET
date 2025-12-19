@@ -62,24 +62,24 @@ document.addEventListener("DOMContentLoaded", () => {
       resultDesc = "Bạn là người có mức độ chi tiêu ƯU TIÊN CHI TIÊU THIẾT YẾU đó nha! Kết quả cho thấy bạn chi phần lớn ngân sách cho việc ăn uống, đi lại là hoàn toàn hợp lí trong giai đoạn này. Ưu tiên hàng đầu hiện tại là học tập và sức khỏe, nhưng bạn cũng có thể cải thiện thêm chi tiêu bằng cách  đầu tư cho bản thân và rèn luyện thói quen tiết kiệm hiệu quả hơn đó. Cố lên!";
     } 
     // Nhóm 2: Tiết kiệm
-    else if (percentSavings >= 30 && percentWants <= 40) {
+    else if (percentSavings >= 30) {
       resultType = "Tiết kiệm";
       resultDesc = "Bạn là một ngườI có mức độ chi tiêu TIẾT KIỆM đó nha! Dù cho còn phụ thuộc tài chính, nhưng tỉ lệ tiết kiệm ấn tượng cho thấy bạn biết phân bổ chi tiêu ổn áp đó chứ! Hãy tiếp tục phát huy, nhưng lâu lâu cũng phải  tự “thưởng” cho bản thân những trải nghiệm sống mới mẻ nữa nha!";
     } 
     // Nhóm 3: Hợp lý
-    else if (10 <= percentSavings < 30 && 20 <= percentWants <= 50 && percentNeeds <= 60) {
+    else if (percentSavings >= 15 && percentWants <= 50) {
       resultType = "Hợp lý";
       resultDesc = "Bạn là người có mức độ chi tiêu HỢP LÝ đó nha! Kết quả cho thấy tỉ lệ chi tiêu của bạn bám sát theo nguyên tắc tài chính hợp lí, giúp bạn có thể phân bổ tiền vào các khoản cần thiết, mong muốn và tiết kiệm một cách khôn ngoan. Hãy tiếp tục giữ thói quen chi tiêu này nhen, và rồi bạn sẽ tiến gần hơn đến sự ổn định tài chính lâu dài sớm thôi. Cố lên!";
     } 
     // Nhóm 4: Hơi phung phí
-    else if (percentSavings >= 10 && 50 < percentWants <= 80 && percentNeeds < 70) {
+    else if (percentSavings >= 5) {
       resultType = "Hơi phung phí";
       resultDesc = "Bạn là người có mức độ chi tiêu HƠI PHUNG PHÍ đó nha! Kết quả chỉ ra rằng dù bạn thường chi nhiều cho một số khoản không quá cần thiết, ngân sách của bạn vẫn đang trong tầm kiểm soát. Hãy thử điều chỉnh lại một chút để sau này chi tiêu hiệu quả hơn nhiều nha!";
     } 
-    // Nhóm 5: Hợp lý (Quanh mốc 60/30/10)
+    // Nhóm 5: Phung phí 
     else {
       resultType = "Phung phí";
-      resultDesc = "SOS!!! Bạn là người có mức độ chi tiêu PHUNG PHÍ đó nha! Kết quả chỉ ra rằng tỉ lệ chi tiêu của bạn đang lớn hơn nhiều so với tiết kiệm, và có thể vượt lố thu nhập luôn. Đây là một dấu hiệu cảnh báo cho bạn điều chỉnh lại thói quen chi tiêu của mình và tập trung vào điều thật sự cần thiết cho cuộc sống thôi nhé. Cố lên!";
+      resultDesc = "Cảnh báo! Bạn là người có mức độ chi tiêu PHUNG PHÍ đó nha! Kết quả chỉ ra rằng tỉ lệ chi tiêu của bạn đang lớn hơn nhiều so với tiết kiệm, và có thể vượt lố thu nhập luôn. Đây là một dấu hiệu cảnh báo cho bạn điều chỉnh lại thói quen chi tiêu của mình và tập trung vào điều thật sự cần thiết cho cuộc sống thôi nhé. Cố lên!";
     }
 
     // 5. Hiển thị & Lưu & Chuyển trang
