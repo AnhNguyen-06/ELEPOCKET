@@ -88,7 +88,7 @@ body {
     display: flex;
     gap: 50px;
     margin-left: auto;
-    align-items: center;  /* căn giữa theo chiều dọc */
+    align-items: center; /* căn giữa theo chiều dọc */
 }
 
 .navbar .menu a {
@@ -896,6 +896,36 @@ input[type=range] {
   inset: 0;
   background: rgba(24, 125, 197, 0.361); 
   pointer-events: none; 
+}
+
+.blog-container {
+    font-family: 'TikTok Sans', sans-serif;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 50px;
+    justify-content: space-;
+}
+
+.blog-card {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #082a44;
+    border-radius: 15px;
+    padding: 20px 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease, text-shadow 0.3 ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-0.5px);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
 }
 
 /*---------------------*/
