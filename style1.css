@@ -616,7 +616,7 @@ body {
         backdrop-filter: blur(5px);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         z-index: 100;
-        height: 220px;
+        height: 250px;
     }
 
     .contact-left, .contact-center, .contact-right {
@@ -632,13 +632,13 @@ body {
     }
 
     .contact-left .logo-name .logo {
-        height: 65px;
+        height: 75px;
         width: auto;
     }
 
     .contact-left .logo-name .name {
         color: white;
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .contact-left .phone-email {
@@ -647,11 +647,11 @@ body {
 
     .contact-left .phone-email p {
         margin-top: 5px;
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .contact-center h3 {
-        font-size: 38px;
+        font-size: 45px;
     }
 
     .contact-right {
@@ -661,7 +661,7 @@ body {
     }
 
     .contact-right .menu a {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .contact-right input {
@@ -671,8 +671,80 @@ body {
 }
 
 @media (max-width: 768px) {
+    .q-test .title-quicktest {
+        font-size: 60px;
+    }
+
+    .theme-box-quicktest h5 {
+        font-size: 17px;
+    }
+
+    .theme-box-quicktest h4 {
+        font-weight: 500;
+        margin-top: 18px;
+    }
+
+    .theme-box-quicktest h3 {
+        font-size: 22px;
+        margin-top: 18px;
+    }
+
+    .theme-box-quicktest h2 {
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+    .theme-box-quicktest .instructions {
+        font-size: 18px;
+    }
+
+    .theme-box-quicktest li {
+        margin-left: 18px;
+    }
+
+    .theme-box-quicktest .btn {
+        font-size: 17px;
+        margin: 22px auto 8px auto;
+    }
+
+    .info-test {
+        margin: 25px auto 0 auto;
+        gap: 20px;
+    }
+
+    .info-test .theme-box-info-1, .theme-box-info-2, .theme-box-info-3 {
+        padding: 18px 26px;
+        margin-top: 15px;
+    }
+
+    .theme-box-info-1 h3, .theme-box-info-2 h3, .theme-box-info-3 h3 {
+        font-size: 38px;
+    }
+
+    .theme-box-info-1 p, .theme-box-info-2 p, .theme-box-info-3 p {
+        font-size: 18px;
+        margin-top: 9px;
+    }
+
+    .discover-spending h3 {
+        font-size: 42px;
+    }
+
+    .discover-spending h4 {
+        font-size: 32px;
+    }
+
+    .discover-spending h5 {
+        font-size: 26px;
+    }
+
+    .info-test .discover-spending .btn {
+        font-size: 22px;
+        margin: 25px auto 35px auto;
+    }
+    
     .contact-info {
-        height: 180px;
+        height: 200px;
     }
 
     .contact-left, .contact-center, .contact-right {
@@ -702,11 +774,11 @@ body {
 
     .contact-left .phone-email p {
         margin-top: 3px;
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .contact-center h3 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .contact-right {
@@ -715,7 +787,7 @@ body {
     }
 
     .contact-right .menu a {
-        font-size: 8px;
+        font-size: 11px;
     }
 
     .contact-right input {
@@ -913,15 +985,6 @@ input[type=range] {
     z-index: 1000;
 }
 
-@media (max-width: 900px) {
-    .question-choice {
-        width: 40%;
-        position: fixed;
-        top: 63%;
-        margin: 20px auto;
-    }
-}
-
 .question-choice h5 {
     text-align: left;
     font-size: 15px;
@@ -979,6 +1042,75 @@ input[type=range] {
 
 .submit-btn:hover {
     transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+    .body1 .main-test {
+        font-size: 59px;   
+        margin-top: 70px;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .body1 .container {
+        flex: 1;
+        max-width: 65%;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
+        width: 30px; 
+        height: 30px; 
+        margin: 20px 0 10px 0;
+        font-size: 12px;
+    }
+
+    .question-box .income p, .expenditure p, .savings p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .range-value {
+        font-size: 13px;
+    }
+
+    .slider-labels {
+        font-size: 15px;
+    }
+
+    .question-choice {
+        width: 30%;
+        position: fixed;
+        top: 60%;
+        right: 30px;
+    }
+
+    .question-choice h5 {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .question-choice h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+    } 
+
+    .grid button { 
+        width: 40px; 
+        height: 40px; 
+        font-weight: 600;
+    } 
+
+    .submit-btn { 
+        padding: 10px 25px;
+        font-size: 15px;
+    }
 }
 
 /*---------------------*/
@@ -1086,24 +1218,25 @@ input[type=range] {
 .blog-container {
     font-family: 'TikTok Sans', sans-serif;
     max-width: 100%;
-    margin: 50px auto;
+    margin: 40px 20px;
     padding: 0 20px;
 }
 
 .blog-grid {
     display: grid;
-    gap: 30px;
+    gap: 40px;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .blog-grid {
+        gap: 40px;
         grid-template-columns: repeat(2, 1fr); /* 1 cột duy nhất */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
     .blog-grid {
         grid-template-columns: 1fr; /* 1 cột duy nhất */
     }
