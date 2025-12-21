@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "TikTok Sans", sans-serif;
 }
 
 /*---------------------*/
@@ -65,7 +65,7 @@ body {
     flex: 1;
     display: flex;
     max-width: 300px;
-    margin: 0 40px;
+    margin: 0 0 0 20px;
 }
 
 .search-box input {
@@ -84,10 +84,70 @@ body {
     cursor: pointer;
 }
 
+.lang-switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 40px;
+}
+
+.lang-label {
+    color: #082a44; 
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Thanh trượt (nền) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #082a44; /* Màu xanh thương hiệu của bạn */
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
 .navbar .menu {
     display: flex;
     gap: 50px;
     margin-left: auto;
+    margin-right: 10px;
     align-items: center; /* căn giữa theo chiều dọc */
 }
 
@@ -132,6 +192,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    .switch {
+        width: 40px;
+    }
+
+    .lang-switch {
+        margin: 0 10px; 
+        justify-content: center;
+    }
+
     .navbar {
         padding: 15px 15px;
     }
@@ -145,11 +214,11 @@ body {
     }
 
     .navbar .search-box {
-        margin: 0 30px;
+        margin: 0 0 0 20px;
     }
 
     .navbar .menu {
-        gap: 30px;
+        gap: 10px;
     }
 
     .navbar .menu a {
@@ -628,7 +697,7 @@ body {
     .contact-left {
         text-align: left;
         padding-top: 60px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .contact-left .logo-name .logo {
@@ -656,7 +725,7 @@ body {
 
     .contact-right {
         text-align: right;
-        margin-right: 20px;
+        margin-right: 10px;
         padding-top: 90px;
     }
 
@@ -1195,7 +1264,7 @@ input[type=range] {
     color: white;
     position: absolute;
     top: 32%;
-    left: 18%;
+    margin-left: 250px;
     transform: translate(-50%, -50%);
     z-index: 2;
     display: inline-block;
@@ -1230,6 +1299,20 @@ input[type=range] {
 }
 
 @media (max-width: 1024px) {
+    .blog-img .title-blog {
+        font-family: 'Playfair Display', serif;
+        font-size: 64px;
+        font-weight: 600;
+        color: white;
+        position: absolute;
+        top: 32%;
+        margin-left: 150px;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        display: inline-block;
+        text-align: center;
+    }
+    
     .blog-grid {
         gap: 40px;
         grid-template-columns: repeat(2, 1fr); /* 1 cột duy nhất */
