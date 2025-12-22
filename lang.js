@@ -90,6 +90,12 @@ const translations = {
         "test-struct": "Test structure: Consists of 3 parts - income, expenses, and savings",
         "confidentiality": "Confidentiality: Your responses will be stored solely for the purpose of analyzing spending habits",
         "start-test": "Got it | Start the test",
+
+        // Classify users
+        "classify-question": "To provide you with the best experience and accurate results, we would like to know: when it comes to managing your expenses, which statement describes you best?",
+        "inde": "I'm financially independent",
+        "half-inde": "I'm partly independent but still rely on others sometimes",
+        "depe": "I rely completely on others for financial support",
     },
     vi: {
         // Thanh điều hướng
@@ -183,6 +189,12 @@ const translations = {
         "test-struct": "Cấu trúc bài test: Gồm 3 phần - thu nhập, chi tiêu và tiết kiệm",
         "confidentiality": "Bảo mật: Câu trả lời của bạn sẽ được lưu trữ ẩn danh chỉ với mục đích phân tích thói quen chi tiêu",
         "start-test": "Đã rõ | Bắt đầu test ngay",
+
+        // Phân loại người dùng
+        "classify-question": "Để có kết quả chính xác nhất, hãy cho chúng mình biết: Đâu là câu miêu tả đúng nhất thói quen quản lý chi tiêu của bạn?",
+        "inde": "Mình tự chủ tài chính hoàn toàn",
+        "half-inde": "Tự lo được một phần, nhưng thỉnh thoảng vẫn cần gia đình hỗ trợ",
+        "depe": "Vẫn phụ thuộc hoàn toàn vào chu cấp từ gia đình",
     }
 }
 
