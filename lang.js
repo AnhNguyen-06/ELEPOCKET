@@ -9,7 +9,7 @@ const translations = {
         "search-placeholder": "Search...",
         
         // Home
-        "slogan": "Smart Budget - Sparks Power",
+        "slogan": "Smart Budget - Sparks\u00A0Power",
         "question-type-of-spending": "What is your type of spending?",
         "get-started": "Get started",
 
@@ -17,6 +17,19 @@ const translations = {
         "page-aboutus-title": "About us",
         "description": "Smart ways to explore and manage your money",
         "quote": "From little habits to big wins.",
+
+        "about-us": "About us",
+        "description-about-us": "is a project founded and run by a group of Vietnamese students, aiming to improve students’ financial management and give them a better understanding about how spending habits affects their lives. Through our quick test, students can learn more about their type of spending and receive practical tips to improve and optimize their consumption habits. In addition, we develop unique products designed to encourage saving habits, fostering healthier and more efficient spending styles among young individuals.",
+
+        "about-name": "About the name",
+        "description-about-name-1": "According to Feng Shui, the elephant is a symbol of prosperity and wealth. In many cultures, it also represents strength and stability, which are the essential qualities in finance and money management. Through the name",
+        "description-about-name-2": "we aim to promote effective and sustainable spending habits, while providing students with the tools and insights they need to assess, manage, and adjust their personal finances.",
+        "description-about-name-3": "aspires to become a trusted companion, helping students take control of their pocket money and invest in the things that truly matter in life.", 
+
+        "vision-message": "Vision & Message",
+        "vis-mes-des-1": "With the goal of raising awareness about spending habits, providing tools to evaluate and track expenses, and creating opportunities for students to manage their finances more effectively,",
+        "vis-mes-des-2": "focuses on analyzing spending patterns, calculating income–expense ratios, and assessing users’ personal financial management levels. As students who struggle with money management are our target users,",
+        "vis-mes-des-3": "aims to help young people develop financial skills early on, while also serving as a supplementary educational tool for teachers and parents. We aspire to bring about positive impact, reaching more than 1,000 students and increasing financial awareness among middle and high school students by 50%.",
 
         // Quick test
         "page-quicktest-title": "Quick test",
@@ -70,6 +83,13 @@ const translations = {
         "remember": "Remember me",
         "forgot-password": "Forgot password?",
         "dont-have-account": "Don't have an account?",
+
+        // Test instruction
+        "test-instruction": "Test instructions",
+        "answer-format": "Answer format: Drag the slider to answer",
+        "test-struct": "Test structure: Consists of 3 parts - income, expenses, and savings",
+        "confidentiality": "Confidentiality: Your responses will be stored solely for the purpose of analyzing spending habits",
+        "start-test": "Got it | Start the test",
     },
     vi: {
         // Thanh điều hướng
@@ -81,7 +101,7 @@ const translations = {
         "search-placeholder": "Tìm kiếm...",
 
         // Trang chủ   
-        "slogan": "Chi tiêu thông minh - Ví tiền rủng rỉnh",
+        "slogan": "Chi tiêu thông minh - Ví\u00A0tiền\u00A0rủng rỉnh",
         "question-type-of-spending": "Mức độ chi tiêu của bạn là gì?",
         "get-started": "Khám phá ngay",
 
@@ -89,6 +109,20 @@ const translations = {
         "page-aboutus-title": "Về chúng tôi",
         "description": "Chi tiêu thông minh - Ví tiền rủng rỉnh",
         "quote": "Làm nên việc lớn từ những điều nhỏ nhất.",
+
+        "about-us": "Về chúng tôi",
+        "description-about-us": "là một dự án website được thành lập bởi nhóm học sinh, sinh viên Việt Nam nhằm hỗ trợ các bạn học sinh trong việc quản lý chi tiêu và hiểu hơn về thói quen tài chính của bản thân. Qua bài kiểm tra nhanh, học sinh có thể khám phá mức độ chi tiêu của mình và nhận được lời khuyên hữu ích, giúp họ cải thiện và tối ưu hóa thói quen tiêu dùng. Ngoài ra, chúng tôi còn phát triển những sản phẩm độc đáo nhằm nâng cao tinh thần tiết kiệm và thói quen chi tiêu lành mạnh, hiệu quả hơn ở người trẻ ngày nay.",
+
+        "about-name": "Về cái tên",
+        "description-about-name-1": "Trong phong thủy, voi là loài tượng trưng cho sự thịnh vượng và tài lộc. Ở nhiều nền văn hóa, voi còn mang biểu tượng của sức mạnh và sự vững chãi, là yếu tố quan trọng đối với lĩnh vực tài chính và quản lý chi tiêu. Thông qua danh xưng",
+        "description-about-name-2": "chúng tôi hy vọng mang lại những giá trị về thói quen chi tiêu hiệu quả và bền vững, cũng như cung cấp thông tin cần thiết cho người dùng về mức độ chi tiêu cá nhân để đánh giá, kiểm soát và điều chỉnh hợp lý theo nhu cầu. Từ đó,",
+        "description-about-name-3": "có thể trở thành công cụ đồng hành giúp học sinh kiểm soát ví tiền và đầu tư vào những mục đích cần thiết trong cuộc sống.", 
+
+        "vision-message": "Tầm nhìn & Thông điệp",
+        "vis-mes-des-1": "Với mục đích nâng cao nhận thức về thói quen chi tiêu, cung cấp công cụ đánh giá - theo dõi mức độ chi tiêu và tạo cơ hội quản lý tài chính hiệu quả cho học sinh,",
+        "vis-mes-des-2": "tập trung phân tích thói quen chi tiêu, tính toán tỷ lệ thu - chi và đánh giá mức độ  quản lý tài chính cá nhân của người dùng. Với đối tượng sử dụng chính là học sinh đang gặp khó khăn trong quản lý tài chính,",
+        "vis-mes-des-3": "mong muốn  hỗ trợ người trẻ hình thành kỹ năng tài chính sớm, cũng như trở thành một công cụ giáo dục bổ trợ dành cho giáo viên và phụ huynh. Chúng tôi kỳ vọng sẽ mang lại tác động tích cực cho người dùng, tiếp cận 1000 học sinh và tăng 50% mức độ nhận diện thói quen tài chính ở học sinh các cấp THCS và THPT.",
+
 
         // Test nhanh
         "page-quicktest-title": "Test nhanh",
@@ -142,6 +176,13 @@ const translations = {
         "remember": "Ghi nhớ tôi",
         "forgot-password": "Quên mật khẩu?",
         "dont-have-account": "Chưa có tài khoản?",
+
+        // Hướng dẫn bài test
+        "test-instruction": "Hướng dẫn bài test",
+        "answer-format": "Cách trả lời: Kéo thanh trượt để trả lời",
+        "test-struct": "Cấu trúc bài test: Gồm 3 phần - thu nhập, chi tiêu và tiết kiệm",
+        "confidentiality": "Bảo mật: Câu trả lời của bạn sẽ được lưu trữ ẩn danh chỉ với mục đích phân tích thói quen chi tiêu",
+        "start-test": "Đã rõ | Bắt đầu test ngay",
     }
 }
 
