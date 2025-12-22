@@ -510,7 +510,7 @@ input:checked + .slider:before {
     .elephant .title-aboutus {
         font-size: 64px;
         top: 35%;
-        left: 23%;
+        left: 24%;
     }
 
     .quote {
@@ -542,6 +542,48 @@ input:checked + .slider:before {
         margin: 0px auto 10px auto;
     }
 }
+
+@media (max-width: 768px) {
+    .elephant {
+        height: 500px;
+    }
+
+    .elephant .title-aboutus {
+        font-size: 64px;
+        top: 35%;
+        left: 30%;
+    }
+
+    .quote {
+        margin-top: 32px;
+    }
+
+    .quote p {
+        font-size: 24px;
+    }
+        
+    .info-ele {
+        margin: 32px auto 32px auto;
+    }
+
+    .info-ele h4 {
+        font-size: 45px;
+    }
+
+    .info-ele p {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .info-ele .about-us, .about-the-name {
+        margin: 0px auto 30px auto;
+    }
+
+    .info-ele .vision-message {
+        margin: 0px auto 10px auto;
+    }
+}
+
 /*---------------------*/
 /* QUICK TEST */
 /*---------------------*/
@@ -651,6 +693,10 @@ input:checked + .slider:before {
     font-weight: 400;
     text-align: justify;
     margin-top: 10px;
+}
+
+.theme-box-info-3 p .highlight {
+    font-weight: 700;
 }
 
 .info-test .discover-spending {
@@ -1564,6 +1610,10 @@ input[type=range] {
 .agreement input {
     margin-right: 8px;
     margin-top: 3px;
+}
+
+.agreement .highlight {
+    font-weight: 700;
 }
 
 .agreement a {
