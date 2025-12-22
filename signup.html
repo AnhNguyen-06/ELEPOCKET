@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div class="search-box">
-                <input type="text" placeholder="Search...">
+                <input type="text" data-lang="search-placeholder" placeholder="Search...">
                 <button type="button"></button>
             </div>
             <div class="lang-switch-wrapper">
@@ -37,28 +37,28 @@
         </header>
         <div class="login-box">
             <form action="">
-                <h1>Sign up</h1>
+                <h1 data-lang="sign-up-title">Sign up</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" data-lang="username-placeholder" placeholder="Username" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
+                    <input type="email" data-lang="email-placeholder" placeholder="Email" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" data-lang="password-placeholder" placeholder="Password" required>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="agreement">
                     <input type="checkbox" id="terms">
                     <label for="terms">
-                        <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> of Elepocket</span>
+                        <span><span data-lang="agree">I agree to the</span> <a href="#" data-lang="terms-of-service">Terms of Service</a> <span data-lang="and">and</span> <a href="#" data-lang="privacy-policy">Privacy Policy</a> <span data-lang="of-ELE">of Elepocket</span></span>
                     </label>
                 </div>
-                <button type="submit" class="btn">Sign up</button>
+                <button type="submit" data-lang="sign-up-button" class="btn">Sign up</button>
                 <div class="register-link">
-                    <p>Already have an account? <a href="/signin.html">Login now</a></p>
+                    <p><span data-lang="already-have-account">Already have an account?</span> <a href="/signin.html" data-lang="login-now">Login now</a></p>
                 </div>
             </form>
         </div>

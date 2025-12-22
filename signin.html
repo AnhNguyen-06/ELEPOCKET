@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div class="search-box">
-                <input type="text" placeholder="Search...">
+                <input type="text" data-lang="search-placeholder" placeholder="Search...">
                 <button type="button"></button>
             </div>
             <div class="lang-switch-wrapper">
@@ -37,22 +37,22 @@
         </header>
         <div class="login-box">
             <form action="">
-                <h1>Login</h1>
+                <h1 data-lang="sign-in-title">Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" data-lang="username-placeholder" placeholder="Username" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" data-lang="password-placeholder" placeholder="Password" required>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="remember-forgot">
-                    <label><input type="checkbox">Remember me</label>
-                    <a href="#">Forgot password?</a>
+                    <label><input type="checkbox"><span data-lang="remember">Remember me</span></label>
+                    <a href="#" data-lang="forgot-password">Forgot password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" data-lang="sign-in-button">Login</button>
                 <div class="register-link">
-                    <p>Don't have an account? <a href="signup.html">Register now</a></p>
+                    <p><span data-lang="dont-have-account">Don't have an account?</span> <a href="signup.html" data-lang="signup-now">Register now</a></p>
                 </div>
             </form>
         </div>
