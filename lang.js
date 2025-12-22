@@ -9,7 +9,7 @@ const translations = {
         "search-placeholder": "Search...",
         
         // Home
-        "slogan": "Smart Budget - Sparks&nbsp;Power",
+        "slogan": "Smart Budget - Sparks Power",
         "question-type-of-spending": "What is your type of spending?",
         "get-started": "Get started",
 
