@@ -96,6 +96,25 @@ const translations = {
         "inde": "I'm financially independent",
         "half-inde": "I'm partly independent but still rely on others sometimes",
         "depe": "I rely completely on others for financial support",
+
+        // Test
+        // Distinctive
+        // Independent
+        "income-inde": "On average, how much income do you earn per month from sources such as part-time work, business activities, or investments?",
+        // Half-independent
+        "income-half-1": "Which of the following ranges best describes the monthly allowance or financial support you receive?",
+        "income-half-2": "On average, how much is your monthly income from other sources (e.g. part-time work, business activities, investments,...)?",
+        // Dependent
+        "income-depe": "Which of the following ranges best describes the monthly allowance or financial support you receive?",
+        // General
+        "needs-1": "On average, how much do you spend per month on living expenses (rent, electricity, water, etc.)?",
+        "needs-2": "On average, how much do you spend per month on food and beverages?",
+        "needs-3": "On average, how much do you spend per month on transportation?",
+        "wants-1": "On average, how much do you spend per month on paid services (e.g. Spotify, Netflix, online courses, learning materials,...)?",
+        "wants-2": "On average, how much do you spend per month on shopping, such as clothing, school supplies, gifts, cosmetics,...?",
+        "wants-3": "On average, how much do you spend per month on leisure activities or social outings with friends?",
+        "savings-1": "On average, how much money do you save per month?",
+        "savings-2": "On average, how much do you spend per month on investments or personal business capital?",
     },
     vi: {
         // Thanh điều hướng
@@ -195,6 +214,25 @@ const translations = {
         "inde": "Mình tự chủ tài chính hoàn toàn",
         "half-inde": "Tự lo được một phần, nhưng thỉnh thoảng vẫn cần gia đình hỗ trợ",
         "depe": "Vẫn phụ thuộc hoàn toàn vào chu cấp từ gia đình",
+
+        // Bài kiểm tra nhanh
+        // Riêng
+        // Người tự lập
+        "income-inde": "Mỗi tháng, bạn nhận được khoản thu nhập từ những nguồn như làm thêm, kinh doanh, đầu tư,... khoảng bao nhiêu?",
+        // Nửa tự lập nửa phụ thuộc
+        "income-half-1": "Mỗi tháng, bạn nhận được trợ cấp/tiền tiêu vặt trong khoảng nào dưới đây?",
+        "income-half-2": "Mỗi tháng, bạn nhận được khoản thu nhập từ những nguồn như làm thêm, kinh doanh, đầu tư,... khoảng bao nhiêu?",
+        // Phụ thuộc hoàn toàn
+        "income-depe": "Mỗi tháng, bạn nhận được trợ cấp/tiền tiêu vặt trong khoảng nào dưới đây?",
+        // Chung
+        "needs-1": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các loại sinh hoạt phí (tiền nhà, điện, nước,...)?",
+        "needs-2": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho việc ăn uống?",
+        "needs-3": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho việc đi lại?",
+        "wants-1": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các dịch vụ có trả phí (Spotify, Netflix, khóa học online, tài liệu học tập,...)?",
+        "wants-2": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các hoạt động mua sắm quần áo, đồ dùng học tập, quà tặng, mỹ phẩm,...?",
+        "wants-3": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các hoạt động vui chơi, hẹn hò cùng bạn bè?",
+        "savings-1": "Mỗi tháng bạn tiết kiệm được khoảng bao nhiêu?",
+        "savings-2": "Mỗi tháng, bạn chi khoảng bao nhiêu cho việc đầu tư, bỏ vốn kinh doanh cá nhân?",
     }
 }
 
