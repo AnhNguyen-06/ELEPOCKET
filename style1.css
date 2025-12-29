@@ -276,6 +276,10 @@ input:checked + .slider:before {
     .navbar .menu a {
         font-size: 13px;
     }
+
+    .navbar .menu a:hover {
+        transform: translateY(-2px);
+    }
 }
 
 @media (max-width: 480px) {
@@ -333,6 +337,10 @@ input:checked + .slider:before {
 
     .navbar .menu a {
         font-size: 7px;
+    }
+
+    .navbar .menu a:hover {
+        transform: translateY(-1px);
     }
 }
 
@@ -405,6 +413,36 @@ input:checked + .slider:before {
 .center .btn:hover {
     transform: translateY(-2px);  
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 480px){
+    .center h1 {
+        font-size: 60px;
+    }
+
+    .center h1:hover {
+        transform: translateY(-1px);  
+    }
+
+    .center h3 {
+        font-size: 25px;
+    }
+
+    .center h5 {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .center .btn {
+        font-size: 10px;
+        padding: 6px 14px;
+        margin: 10px auto;
+    }
+
+    .center .btn:hover {
+        transform: translateY(-1px);
+    }
 }
 
 /* ABOUT US */
@@ -551,7 +589,7 @@ input:checked + .slider:before {
     .elephant .title-aboutus {
         font-size: 64px;
         top: 35%;
-        left: 30%;
+        left: 24%;
     }
 
     .quote {
@@ -576,7 +614,54 @@ input:checked + .slider:before {
     }
 
     .info-ele .about-us, .about-the-name {
-        margin: 0px auto 30px auto;
+        padding: 12px 20px;
+    }
+
+    .info-ele .vision-message {
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .elephant {
+        height: 200px;
+    }
+
+    .elephant .title-aboutus {
+        font-size: 30px;
+        top: 35%;
+        left: 24%;
+    }
+
+    .quote {
+        margin-top: 15px;
+    }
+
+    .quote p {
+        font-size: 12px;
+    }
+        
+    .info-ele {
+        margin: 15px auto 15px auto;
+    }
+
+    .info-ele h4 {
+        font-size: 25px;
+    }
+
+    .info-ele p {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .info-ele .about-us, .about-the-name, .vision-message {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 12px 20px;
+        gap: 15px;
+    }
+
+    .info-ele .about-us, .about-the-name {
+        margin: 0px auto 20px auto;
     }
 
     .info-ele .vision-message {
@@ -627,7 +712,7 @@ input:checked + .slider:before {
 }
 
 .theme-box-quicktest h2 {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 700;
 }
 
@@ -684,7 +769,7 @@ input:checked + .slider:before {
 
 .theme-box-info-1 h3, .theme-box-info-2 h3, .theme-box-info-3 h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 700;
 }
 
@@ -841,6 +926,85 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 1024px) {
+    .q-test .title-quicktest {
+        font-size: 64px;
+        margin-top: 80px;
+    }
+
+    .theme-box-quicktest {
+        margin-top: 20px;
+        padding: 18px 28px;
+    }
+
+    .theme-box-quicktest h5 {
+        font-size: 17px;
+    }
+
+    .theme-box-quicktest h4 {
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .theme-box-quicktest h3 {
+        font-size: 23px;
+        margin-top: 15px;
+    }
+
+    .theme-box-quicktest h2 {
+        font-size: 45px;
+    }
+
+    .theme-box-quicktest .instructions {
+        font-size: 20px;
+    }
+
+    .theme-box-quicktest li {
+        margin-left: 18px;
+    }
+
+    .theme-box-quicktest .btn {
+        font-size: 18px;
+        padding: 12px 23px;
+        margin: 20px auto 6px auto;
+    }
+
+    .info-test {
+        margin: 24px auto 0 auto;
+        gap: 16px;
+    }
+
+    .info-test .theme-box-info-1, .theme-box-info-2, .theme-box-info-3 {
+        padding: 18px 28px;
+        margin-top: 15px;
+    }
+
+    .theme-box-info-1 h3, .theme-box-info-2 h3, .theme-box-info-3 h3 {
+        font-size: 45px;
+    }
+
+    .theme-box-info-1 p, .theme-box-info-2 p, .theme-box-info-3 p {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    .discover-spending h3 {
+        font-size: 40px;
+    }
+
+    .discover-spending h4 {
+        font-size: 31px;
+    }
+
+    .discover-spending h5 {
+        font-size: 25px;
+    }
+
+    .info-test .discover-spending .btn {
+        font-size: 18px;
+        padding: 12px 23px;
+        margin: 24px auto 32px auto;
+    }
+
     .contact-info {
         height: 250px;
     }
@@ -901,7 +1065,7 @@ input:checked + .slider:before {
     }
 
     .theme-box-quicktest h3 {
-        font-size: 22px;
+        font-size: 20px;
         margin-top: 18px;
     }
 
@@ -938,7 +1102,7 @@ input:checked + .slider:before {
     }
 
     .theme-box-info-1 p, .theme-box-info-2 p, .theme-box-info-3 p {
-        font-size: 18px;
+        font-size: 17px;
         margin-top: 9px;
     }
 
@@ -1014,7 +1178,152 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 480px) {
+    .q-test .title-quicktest {
+        font-size: 30px;
+        margin-top: 50px;
+    }
 
+    .theme-box-quicktest {
+        margin-top: 10px;
+        border-radius: 15px;
+        padding: 10px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .theme-box-quicktest h5 {
+        font-size: 8px;
+    }
+
+    .theme-box-quicktest h4 {
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .theme-box-quicktest h3 {
+        font-size: 12px;
+        font-weight: 530;
+        margin-top: 8px;
+    }
+
+    .theme-box-quicktest h2 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .theme-box-quicktest .instructions {
+        font-size: 11px;
+    }
+
+    .theme-box-quicktest li {
+        margin-left: 12px;
+    }
+
+    .theme-box-quicktest .btn {
+        font-size: 11px;
+        padding: 6px 14px;
+        margin: 12px auto 5px auto;
+    }
+
+    .theme-box-quicktest .btn:hover {
+        transform: translateY(-1px);
+    }
+
+    .info-test {
+        margin: 12px auto 0 auto;
+        gap: 8px;
+    }
+
+    .info-test .theme-box-info-1, .theme-box-info-2, .theme-box-info-3 {
+        flex: 0 0 1;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 12px 20px;
+        margin-top: 15px;
+    }
+
+    .theme-box-info-1 h3, .theme-box-info-2 h3, .theme-box-info-3 h3 {
+        font-size: 25px;
+    }
+
+    .theme-box-info-1 p, .theme-box-info-2 p, .theme-box-info-3 p {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    .discover-spending h3 {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .discover-spending h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .discover-spending h5 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .info-test .discover-spending .btn {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 6px 14px;
+        margin: 10px auto 20px auto;
+    }
+
+    .info-test .btn:hover {
+        transform: translateY(-1px);
+    }
+
+    .contact-info {
+        padding: 10px 10px;
+        height: 125px;
+    }
+
+    .contact-left {
+        padding-top: 35px;
+        margin-left: 5px;
+    }
+
+    .contact-left .logo-name .logo {
+        height: 25px;
+    }
+
+    .contact-left .logo-name .name {
+        font-size: 10px;
+    }
+
+    .contact-left .phone-email {
+        margin-top: 5px;
+    }
+
+    .contact-left .phone-email p {
+        margin-top: 2px;
+        font-size: 7px;
+    }
+
+    .contact-center h3 {
+        font-size: 21px;
+    }
+
+    .contact-right {
+        padding-top: 35px;
+        margin-right: 5px;
+    }
+
+    .contact-right .menu {
+        margin-top: 2px;
+    }
+
+    .contact-right .menu a {
+        font-size: 7px;
+    }
+
+    .contact-right input {
+        padding: 5px;
+        width: 70px;
+        height: 20px;
+    }
 }
 
 /*---------------------*/
@@ -1329,6 +1638,144 @@ input[type=range] {
     }
 }
 
+@media (max-width: 768px) {
+    .body1 .main-test {
+        font-size: 59px;   
+        margin-top: 70px;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .body1 .container {
+        flex: 1;
+        max-width: 65%;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
+        width: 30px; 
+        height: 30px; 
+        margin: 20px 0 10px 0;
+        font-size: 12px;
+    }
+
+    .question-box .income p, .expenditure p, .savings p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .range-value {
+        font-size: 13px;
+    }
+
+    .slider-labels {
+        font-size: 15px;
+    }
+
+    .question-choice {
+        width: 30%;
+        position: fixed;
+        top: 60%;
+        right: 30px;
+    }
+
+    .question-choice h5 {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .question-choice h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+    } 
+
+    .grid button { 
+        width: 40px; 
+        height: 40px; 
+        font-weight: 600;
+    } 
+
+    .submit-btn { 
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body1 .main-test {
+        font-size: 59px;   
+        margin-top: 70px;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .body1 .container {
+        flex: 1;
+        max-width: 65%;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
+        width: 30px; 
+        height: 30px; 
+        margin: 20px 0 10px 0;
+        font-size: 12px;
+    }
+
+    .question-box .income p, .expenditure p, .savings p {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .range-value {
+        font-size: 13px;
+    }
+
+    .slider-labels {
+        font-size: 15px;
+    }
+
+    .question-choice {
+        width: 30%;
+        position: fixed;
+        top: 60%;
+        right: 30px;
+    }
+
+    .question-choice h5 {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .question-choice h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+        gap: 10px;
+        margin-top: 15px;
+    } 
+
+    .grid button { 
+        width: 40px; 
+        height: 40px; 
+        font-weight: 600;
+    } 
+
+    .submit-btn { 
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
 /*---------------------*/
 /* MAIN TEST RESULTS */
 /*---------------------*/
@@ -1477,6 +1924,18 @@ input[type=range] {
 @media (max-width: 650px) {
     .blog-grid {
         grid-template-columns: 1fr; /* 1 cột duy nhất */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-img {
+        height: 200px;
+    }
+
+    .blog-img .title-blog {
+        font-size: 30px;
+        top: 35%;
+        left: 22%;
     }
 }
 

@@ -152,7 +152,7 @@ const translations = {
         // Test nhanh
         "page-quicktest-title": "Test nhanh",
         "type-of-spending-test": "Test mức độ chi tiêu",
-        "free-test-for-students": "Bài test mức độ chi tiêu dành cho học sinh hoàn toàn miễn phí!!",
+        "free-test-for-students": "Bài test mức độ chi tiêu dành cho học sinh hoàn toàn miễn phí!",
         "test-struct": "Cấu trúc bài test:",
         "num-of-questions": "Số lượng câu hỏi: 9 - 10 câu",
         "duration": "Thời gian thực hiện: 10 - 15 phút",
