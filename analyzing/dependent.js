@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const submitBtn = document.querySelector(".submit-btn");
-    const sliders = document.querySelectorAll(".range-input");
+    const form = document.querySelector("form");
 
-  submitBtn.addEventListener("click", () => {
+  submitBtn.addEventListener("click", (e) => {
     // 1. Lấy dữ liệu đầu vào
-    const income = Number(document.querySelector("#q1 + p + .slider-container input").value);
+    e.preventDefault();
 
+    const income = Number(document.querySelector("#q1 + p + .slider-container input").value);
     const needs =
       Number(document.querySelector("#q2 + p + .slider-container input").value) +
       Number(document.querySelector("#q3 + p + .slider-container input").value) +
@@ -15,47 +16,30 @@ document.addEventListener("DOMContentLoaded", () => {
       Number(document.querySelector("#q5 + p + .slider-container input").value) +
       Number(document.querySelector("#q6 + p + .slider-container input").value) +
       Number(document.querySelector("#q7 + p + .slider-container input").value);
-
-       // Tiết kiệm + đầu tư (câu 8–9)
-    let savings = 0;
     
     if (income <= 0) {
       alert("Vui lòng nhập số tiền trợ cấp/thu nhập hợp lệ (lớn hơn 0).");
       return;
     }
 
-    let resultType = "";
-    let resultDesc = "";
-
-    // 2. LOGIC TỰ ĐỘNG BALANCE
+    // 2. Logic tính toán tự cân bằng
+    let savings = 0;
     const sumOfNandW = needs + wants;
-    const remainingInfo = income - sumOfNandW;
-
-    // Trường hợp 1: Hết sạch tiền hoặc âm tiền
-    if (remainingInfo < 0) {
-      resultType = "Thiếu hụt ngân sách";
-      resultDesc = "Tổng chi tiêu của bạn đã vượt quá số tiền trợ cấp/thu nhập! Với sinh viên/người phụ thuộc, điều này rất rủi ro vì bạn không có nguồn thu nhập chủ động để bù đắp. Hãy cắt giảm ngay các khoản trà sữa, mua sắm.";
-      
-      alert(
-        `💰 Kết quả phân tích của bạn:\n\n` +
-        `Thu nhập/Trợ cấp: ${income.toLocaleString("vi-VN")} VND\n\n` +
-        `Nhu cầu thiết yếu: ${needs.toLocaleString("vi-VN")} VND\n` +
-        `Nhu cầu mong muốn: ${wants.toLocaleString("vi-VN")} VND\n` +
-        `→ Tổng chi tiêu (${sumOfNandW.toLocaleString("vi-VN")} VND) vượt quá thu nhập!\n\n` +
-        `📊 Phân loại: ${resultType}\n\n${resultDesc}`
-      );
-      return;
+    if (income > sumOfNandW) {
+      savings = income - sumOfNandW;
+    } else {
+      savings = 0;
     }
-
-    savings = remainingInfo;
 
     // 3. Tính tỷ lệ phần trăm
     const percentNeeds = (needs / income) * 100;
     const percentWants = (wants / income) * 100;
     const percentSavings = (savings / income) * 100;
 
+    let resultType = "";
+    let resultDesc = "";
+
     // 4. PHÂN LOẠI (Benchmark: 60 Needs / 30 Wants / 10 Savings)
-    
     // Nhóm 1: Ưu tiên chi tiêu thiết yếu
     if (percentNeeds >= 70) {
       resultType = "Ưu tiên thiết yếu";
@@ -82,21 +66,38 @@ document.addEventListener("DOMContentLoaded", () => {
       resultDesc = "Cảnh báo! Bạn là người có mức độ chi tiêu PHUNG PHÍ đó nha! Kết quả chỉ ra rằng tỉ lệ chi tiêu của bạn đang lớn hơn nhiều so với tiết kiệm, và có thể vượt lố thu nhập luôn. Đây là một dấu hiệu cảnh báo cho bạn điều chỉnh lại thói quen chi tiêu của mình và tập trung vào điều thật sự cần thiết cho cuộc sống thôi nhé. Cố lên!";
     }
 
-    // 5. Hiển thị & Lưu & Chuyển trang
-    alert(
-    `💰 Kết quả phân tích (Phụ thuộc):\n\n` +
-    `Thu nhập: ${income.toLocaleString("vi-VN")} VND\n\n` +
-    `Nhu cầu thiết yếu: ${percentNeeds.toFixed(1)}%  →  ${needs.toLocaleString("vi-VN")} VND\n` +
-    `Nhu cầu mong muốn: ${percentWants.toFixed(1)}%  →  ${wants.toLocaleString("vi-VN")} VND\n` +
-    `Tiết kiệm: ${percentSavings.toFixed(1)}%  →  ${savings.toLocaleString("vi-VN")} VND\n\n` +
-    `📊 Phân loại: ${resultType}\n\n${resultDesc}`
-    );
+    // 4. CHUẨN BỊ DỮ LIỆU GỬI ĐI
+    const formData = new FormData(form);
+    // Thêm các kết quả tính toán vào form để Netlify lưu lại luôn
+    formData.append("result-type", resultType);
+    formData.append("final-savings", savings);
 
-    sessionStorage.setItem("resultData", JSON.stringify({
-      income, needs, wants, savings, resultType, resultDesc
-    }));
+    // 5. GỬI DỮ LIỆU NGẦM VỀ NETLIFY (AJAX)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        // 6. LƯU VÀO BỘ NHỚ TẠM ĐỂ VẼ BIỂU ĐỒ Ở TRANG SAU
+        const resultData = {
+          needs,
+          wants,
+          savings,
+          resultType,
+          resultDesc
+        };
+        sessionStorage.setItem("resultData", JSON.stringify(resultData));
 
-    // Chuyển hướng về trang kết quả tương ứng
-    window.location.href = "results/result-dependent.html";
+        // 7. CHUYỂN HƯỚNG SANG TRANG KẾT QUẢ
+        const actionPath = form.getAttribute("action") || "results/result-dependent.html";
+        window.location.href = actionPath;
+      })
+      .catch((error) => {
+        console.error("Lỗi gửi dữ liệu:", error);
+        alert("Có lỗi xảy ra khi gửi dữ liệu, nhưng bạn vẫn sẽ xem được kết quả.");
+        // Vẫn cho chuyển trang nếu lỗi gửi để người dùng xem được biểu đồ
+        window.location.href = "results/result-dependent.html";
+      });
   });
 });
