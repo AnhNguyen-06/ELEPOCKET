@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = document.querySelector(".submit-btn");
-  const sliders = document.querySelectorAll(".range-input");
+  const form = document.querySelector("form");
 
   // Khi bấm nút Submit
-  submitBtn.addEventListener("click", () => {
+  submitBtn.addEventListener("click", (e) => {
     // Thu nhập (câu 1)
-    const income = Number(document.querySelector("#q1 + p + .slider-container input").value);
+    e.preventDefault();
 
+    const income = Number(document.querySelector("#q1 + p + .slider-container input").value);
     // Các chi tiêu NEEDS (câu 2–4)
     const needs =
       Number(document.querySelector("#q2 + p + .slider-container input").value) +
@@ -19,49 +20,27 @@ document.addEventListener("DOMContentLoaded", () => {
       Number(document.querySelector("#q6 + p + .slider-container input").value) +
       Number(document.querySelector("#q7 + p + .slider-container input").value);
 
-    // Tiết kiệm + đầu tư (câu 8–9)
-    let savings =
-      Number(document.querySelector("#q8 + p + .slider-container input").value) +
-      Number(document.querySelector("#q9 + p + .slider-container input").value);
-
     if (income <= 0) {
       alert("Vui lòng nhập thu nhập hợp lệ (lớn hơn 0).");
       return;
     }
 
-
-    let resultType = "";
-    let resultDesc = "";
-
-    // 2. LOGIC TỰ ĐỘNG BALANCE (QUAN TRỌNG)
-    // Tính savings dựa trên phần còn lại của thu nhập
+    // 2. Logic tính toán tự cân bằng
+    let savings = 0;
     const sumOfNandW = needs + wants;
-    const remainingInfo = income - sumOfNandW;
+    if (income > sumOfNandW) {
+      savings = income - sumOfNandW;
+    } else {
+      savings = 0;
+    }
 
-    // Trường hợp 1: Chi tiêu (Needs + Wants) đã lố thu nhập -> Savings ÂM
-    if (remainingInfo < 0) {
-      resultType = "Overspending"; // Hoặc "Phung phí (Vượt thu nhập)"
-      resultDesc = "Your type of spending is overspending! The result shows that your spending rates are much more significant than the saving ones, and they may surpass your amount of income. This is a warning sign for you to restructure your spending habits and focus on what is necessary for you to spend on.";
-      
-      // Hiển thị cảnh báo ngay lập tức và dừng lại
-      alert(
-        `💰 Kết quả phân tích của bạn:\n\n` +
-        `Thu nhập: ${income.toLocaleString("vi-VN")} VND\n\n` +
-        `Nhu cầu thiết yếu: ${needs.toLocaleString("vi-VN")} VND\n` +
-        `Nhu cầu mong muốn: ${wants.toLocaleString("vi-VN")} VND\n` +
-        `→ Tổng chi tiêu (${sumOfNandW.toLocaleString("vi-VN")} VND) vượt quá thu nhập!\n\n` +
-        `📊 Phân loại: ${resultType}\n\n${resultDesc}`
-      );
-      return;
-    } 
-    
-    // Trường hợp 2: Còn dư tiền (hoặc vừa đủ) -> Gán phần dư vào Savings
-    savings = remainingInfo;
-
-    // 3. Tính tỷ lệ phần trăm (Dựa trên savings đã balance)
+    // 3. Tính tỷ lệ phần trăm
     const percentNeeds = (needs / income) * 100;
     const percentWants = (wants / income) * 100;
     const percentSavings = (savings / income) * 100;
+
+    let resultType = "";
+    let resultDesc = "";
 
     // 4. PHÂN LOẠI MỚI (LOGIC HÌNH PHỄU - WATERFALL)
     // Đảm bảo bao quát hết các trường hợp
@@ -92,25 +71,38 @@ document.addEventListener("DOMContentLoaded", () => {
       resultDesc = "Xin chúc mừng! Bạn có cơ cấu tài chính cân bằng. Bạn tuân thủ tốt quy tắc 50/30/20, vừa đảm bảo nhu cầu cuộc sống, vừa có khoản hưởng thụ hợp lý mà vẫn tích lũy được cho tương lai.";
     }
 
-    // 5. Hiển thị kết quả cuối cùng
-    alert(
-    `💰 Kết quả phân tích của bạn:\n\n` +
-    `Thu nhập: ${income.toLocaleString("vi-VN")} VND\n\n` +
-    `Nhu cầu thiết yếu: ${percentNeeds.toFixed(1)}%  →  ${needs.toLocaleString("vi-VN")} VND\n` +
-    `Nhu cầu mong muốn: ${percentWants.toFixed(1)}%  →  ${wants.toLocaleString("vi-VN")} VND\n` +
-    `Tiết kiệm & đầu tư: ${percentSavings.toFixed(1)}%  →  ${savings.toLocaleString("vi-VN")} VND\n\n` +
-    `📊 Phân loại: ${resultType}\n\n${resultDesc}`
-    );
+    // 4. CHUẨN BỊ DỮ LIỆU GỬI ĐI
+    const formData = new FormData(form);
+    // Thêm các kết quả tính toán vào form để Netlify lưu lại luôn
+    formData.append("result-type", resultType);
+    formData.append("final-savings", savings);
 
-    sessionStorage.setItem("resultData", JSON.stringify({
-      income,
-      needs,
-      wants,
-      savings,
-      resultType,
-      resultDesc
-    }));
+    // 5. GỬI DỮ LIỆU NGẦM VỀ NETLIFY (AJAX)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        // 6. LƯU VÀO BỘ NHỚ TẠM ĐỂ VẼ BIỂU ĐỒ Ở TRANG SAU
+        const resultData = {
+          needs,
+          wants,
+          savings,
+          resultType,
+          resultDesc
+        };
+        sessionStorage.setItem("resultData", JSON.stringify(resultData));
 
-    window.location.href = "results/result-independent.html";
+        // 7. CHUYỂN HƯỚNG SANG TRANG KẾT QUẢ
+        const actionPath = form.getAttribute("action") || "results/result-independent.html";
+        window.location.href = actionPath;
+      })
+      .catch((error) => {
+        console.error("Lỗi gửi dữ liệu:", error);
+        alert("Có lỗi xảy ra khi gửi dữ liệu, nhưng bạn vẫn sẽ xem được kết quả.");
+        // Vẫn cho chuyển trang nếu lỗi gửi để người dùng xem được biểu đồ
+        window.location.href = "results/result-independent.html";
+      });
   });
 });

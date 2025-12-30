@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       Number(document.querySelector("#q7 + p + .slider-container input").value);
     
     if (income <= 0) {
-      alert("Vui lòng nhập số tiền trợ cấp/thu nhập hợp lệ (lớn hơn 0).");
+      alert("Vui lòng nhập thu nhập hợp lệ (lớn hơn 0)");
       return;
     }
 
