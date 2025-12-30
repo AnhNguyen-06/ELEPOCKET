@@ -37,146 +37,149 @@
                 <a href="signup.html" data-lang="nav-signup">Sign up</a>
             </nav>
         </header>
-        <div class="container">
-            <h3 class="main-test" data-lang="type-of-spending-test">Type of spending test</h3>
-            <div class="question-box">
-                <section class="income">
-                    <div class="question1" id="q1">1</div>
-                    <p data-lang="income-half-1">Which of the following ranges best describes the monthly allowance or financial support you receive?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>2.500.000</span>
-                            <span>5.000.000</span>
+        <form name="half-independent-test" netlify>
+            <div class="container">
+                <h3 class="main-test" data-lang="type-of-spending-test">Type of spending test</h3>
+                <div class="question-box">
+                    <section class="income">
+                        <!--INCOME-->
+                        <div class="question1" id="q1">1</div>
+                        <p data-lang="income-half-1">Which of the following ranges best describes the monthly allowance or financial support you receive?</p>
+                        <div class="slider-container">
+                            <input type="range" name="income-financial-support" min="0" max="5000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>2.500.000</span>
+                                <span>5.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question2" id="q2">2</div>
-                    <p data-lang="income-half-2">On average, how much is your monthly income from other sources (e.g. part-time work, business activities, investments,...)?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>2.500.000</span>
-                            <span>5.000.000</span>
+                        <div class="question2" id="q2">2</div>
+                        <p data-lang="income-half-2">On average, how much is your monthly income from other sources (e.g. part-time work, business activities, investments,...)?</p>
+                        <div class="slider-container">
+                            <input type="range" name="income-income" min="0" max="5000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>2.500.000</span>
+                                <span>5.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section class="expenditure">
-                    <!--NEEDS-->
-                    <div class="question3" id="q3">3</div>
-                    <p data-lang="needs-1">On average, how much do you spend per month on living expenses (rent, electricity, water, etc.)?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>2.500.000</span>
-                            <span>5.000.000</span>
+                    </section>
+                    <section class="expenditure">
+                        <!--NEEDS-->
+                        <div class="question3" id="q3">3</div>
+                        <p data-lang="needs-1">On average, how much do you spend per month on living expenses (rent, electricity, water, etc.)?</p>
+                        <div class="slider-container">
+                            <input type="range" name="needs-living-expenses" min="0" max="5000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>2.500.000</span>
+                                <span>5.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question4" id="q4">4</div>
-                    <p data-lang="needs-2">On average, how much do you spend per month on food and beverages?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>1.500.000</span>
-                            <span>3.000.000</span>
+                        <div class="question4" id="q4">4</div>
+                        <p data-lang="needs-2">On average, how much do you spend per month on food and beverages?</p>
+                        <div class="slider-container">
+                            <input type="range" name="needs-food-spending" min="0" max="3000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>1.500.000</span>
+                                <span>3.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question5" id="q5">5</div>
-                    <p data-lang="needs-3">On average, how much do you spend per month on transportation?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>1.500.000</span>
-                            <span>3.000.000</span>
+                        <div class="question5" id="q5">5</div>
+                        <p data-lang="needs-3">On average, how much do you spend per month on transportation?</p>
+                        <div class="slider-container">
+                            <input type="range" name="needs-transportations" min="0" max="3000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>1.500.000</span>
+                                <span>3.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <!--WANTS-->
-                    <div class="question6" id="q6">6</div>
-                    <p data-lang="wants-1">On average, how much do you spend per month on paid services (e.g. Spotify, Netflix, online courses, learning materials,...)?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="1000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>1.000.000</span>
-                            <span>2.000.000</span>
+                        <!--WANTS-->
+                        <div class="question6" id="q6">6</div>
+                        <p data-lang="wants-1">On average, how much do you spend per month on paid services (e.g. Spotify, Netflix, online courses, learning materials,...)?</p>
+                        <div class="slider-container">
+                            <input type="range" name="wants-paid-services" min="0" max="1000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>1.000.000</span>
+                                <span>2.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question7" id="q7">7</div>
-                    <p data-lang="wants-2">On average, how much do you spend per month on shopping, such as clothing, school supplies, gifts, cosmetics,...?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>1.500.000</span>
-                            <span>3.000.000</span>
+                        <div class="question7" id="q7">7</div>
+                        <p data-lang="wants-2">On average, how much do you spend per month on shopping, such as clothing, school supplies, gifts, cosmetics,...?</p>
+                        <div class="slider-container">
+                            <input type="range" name="wants-shopping" min="0" max="3000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>1.500.000</span>
+                                <span>3.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question8" id="q8">8</div>
-                    <p data-lang="wants-3">On average, how much do you spend per month on leisure activities or social outings with friends?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="3000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>1.500.000</span>
-                            <span>3.000.000</span>
+                        <div class="question8" id="q8">8</div>
+                        <p data-lang="wants-3">On average, how much do you spend per month on leisure activities or social outings with friends?</p>
+                        <div class="slider-container">
+                            <input type="range" name="wants-leisure-activities" min="0" max="3000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>1.500.000</span>
+                                <span>3.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section class="savings">
-                    <div class="question9" id="q9">9</div>
-                    <p data-lang="savings-1">On average, how much money do you save per month?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>2.500.000</span>
-                            <span>5.000.000</span>
+                    </section>
+                    <section class="savings">
+                        <div class="question9" id="q9">9</div>
+                        <p data-lang="savings-1">On average, how much money do you save per month?</p>
+                        <div class="slider-container">
+                            <input type="range" name="savings-saves" min="0" max="5000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>2.500.000</span>
+                                <span>5.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="question10" id="q10">10</div>
-                    <p data-lang="savings-2">On average, how much do you spend per month on investments or personal business capital?</p>
-                    <div class="slider-container">
-                        <input type="range" min="0" max="5000000" step="100000" value="0" class="range-input">
-                        <span class="range-value">800.000</span>
-                        <div class="slider-labels">
-                            <span>0</span>
-                            <span>2.500.000</span>
-                            <span>5.000.000</span>
+                        <div class="question10" id="q10">10</div>
+                        <p data-lang="savings-2">On average, how much do you spend per month on investments or personal business capital?</p>
+                        <div class="slider-container">
+                            <input type="range" name="savings-investments" min="0" max="5000000" step="100000" value="0" class="range-input">
+                            <span class="range-value">800.000</span>
+                            <div class="slider-labels">
+                                <span>0</span>
+                                <span>2.500.000</span>
+                                <span>5.000.000</span>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
-        </div>
-        <div class="question-choice">
-            <h5>TEST</h5>
-            <h2>Type of spending test</h2>
-            <button class="submit-btn">Submit</button>
-            <div class="grid">
-                <button class="active">1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>10</button>
+            <div class="question-choice">
+                <h5>TEST</h5>
+                <h2>Type of spending test</h2>
+                <button type="submit" class="submit-btn">Submit</button>
+                <div class="grid">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>10</button>
+                </div>
             </div>
-        </div>
+        </form>
         <footer class="contact-info">
             <div class="contact-left">
                 <div class="logo-name">
