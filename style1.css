@@ -1396,10 +1396,100 @@ input:checked + .slider:before {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
+@media (max-width: 1024px) {
+    .instructions-bf-test {
+        padding: 18px 27px;
+    }
+
+    .instructions-bf-test h1 {
+        font-size: 54px;
+    }
+
+    .instructions-bf-test ul {
+        font-size: 23px;
+        padding-left: 18px;
+    }
+
+    .instructions-bf-test ul li {
+        margin-top: 9px;
+    }
+
+    .instructions-bf-test .btn {
+        font-size: 18px;
+        padding: 11px 25px;
+        margin: 18px auto 9px auto;
+    }
+
+    .instructions-bf-test .btn:hover {
+        transform: translateY(-2px);  
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    }
+}
+
+@media (max-width: 768px) {
+    .instructions-bf-test {
+        padding: 14px 20px;
+    }
+
+    .instructions-bf-test h1 {
+        font-size: 40px;
+    }
+
+    .instructions-bf-test ul {
+        font-size: 17px;
+        padding-left: 14px;
+    }
+
+    .instructions-bf-test ul li {
+        margin-top: 7px;
+    }
+
+    .instructions-bf-test .btn {
+        font-size: 14px;
+        padding: 8px 18px;
+        margin: 14px auto 7px auto;
+    }
+
+    .instructions-bf-test .btn:hover {
+        transform: translateY(-1px);  
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    }
+}
+
+@media (max-width: 480px) {
+    .instructions-bf-test {
+        padding: 8px 13px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .instructions-bf-test h1 {
+        font-size: 25px;
+    }
+
+    .instructions-bf-test ul {
+        font-size: 11px;
+        padding-left: 9px;
+    }
+
+    .instructions-bf-test ul li {
+        margin-top: 4px;
+    }
+
+    .instructions-bf-test .btn {
+        font-size: 9px;
+        padding: 5px 11px;
+        margin: 9px auto 4px auto;
+    }
+
+    .instructions-bf-test .btn:hover {
+        transform: translateY(-1px);  
+        text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    }
+}
+
 /*---------------------*/
 /* MANAGING */
 /*---------------------*/
-
 .classify {
     position: absolute;
     top: 50%;
@@ -1442,10 +1532,68 @@ input:checked + .slider:before {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
+@media (max-width: 1024px) {
+    .classify h5 {
+        font-size: 36px;
+        margin-bottom: 27px;
+    }
+
+    .classify .answer-classify {
+        font-size: 27px;
+    }
+
+    .classify a {
+        font-size: 23px;
+        padding: 11px 25px;
+        margin: 18px auto 9px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .classify h5 {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+
+    .classify .answer-classify {
+        font-size: 20px;
+    }
+
+    .classify a {
+        font-size: 17px;
+        padding: 8px 19px;
+        margin: 14px auto 7px auto;
+    }
+
+    .classify a:hover {
+        transform: translateY(-1px);
+    }
+}
+
+@media (max-width: 480px) {
+    .classify h5 {
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+
+    .classify .answer-classify {
+        font-size: 13px;
+    }
+
+    .classify a {
+        font-size: 11px;
+        padding: 5px 12px;
+        margin: 9px auto 4px auto;
+    }
+
+    .classify a:hover {
+        transform: translateY(-1px);
+    }
+}
+
 /*---------------------*/
 /* MAIN TEST */
 /*---------------------*/
-
 .body1 {
     background: url('images/Draft\ Web.png') no-repeat center center / cover;
     display: flex;
@@ -1510,7 +1658,7 @@ input[type=range] {
 .question-choice {
     width: auto;
     position: fixed;
-    top: 69%;
+    top: 60%;
     right: 50px;
     transform: translateY(-100%);
     background: rgba(255, 255, 255, 0.1); 
@@ -1535,7 +1683,7 @@ input[type=range] {
 
 .grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 15px;
     justify-items: center;
     margin-top: 20px;
@@ -1543,8 +1691,8 @@ input[type=range] {
 } 
 
 .grid button { 
-    width: 55px; 
-    height: 55px; 
+    width: 50px; 
+    height: 50px; 
     border: none; 
     border-radius: 50%; 
     background: #082a44; 
@@ -1584,222 +1732,307 @@ input[type=range] {
 
 @media (max-width: 1024px) {
     .body1 .main-test {
-        font-size: 59px;   
-        margin-top: 70px;
-        margin-left: 5px;
-        text-align: left;
+        font-size: 64px;  
+        margin-top: 56px;
+        margin-left: 30px;
     }
 
     .body1 .container {
-        flex: 1;
-        max-width: 65%;
-        padding: 30px 30px 30px 30px;
+        max-width: 70%;
+        padding: 24px 24px 24px 35px;
     }
 
     .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
-        width: 30px; 
-        height: 30px; 
-        margin: 20px 0 10px 0;
-        font-size: 12px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+        margin: 24px 0 12px 0;
     }
 
     .question-box .income p, .expenditure p, .savings p {
         font-size: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
-    .range-value {
-        font-size: 13px;
+    .question-box .slider-container {
+        margin-top: 8px;
     }
 
     .slider-labels {
         font-size: 15px;
+        font-weight: 600;
+    }
+
+    .range-value {
+        font-size: 15px;
     }
 
     .question-choice {
-        width: 30%;
-        position: fixed;
-        top: 60%;
-        right: 30px;
+        top: 62%;
+        right: 35px;
+        padding: 16px 24px;
     }
 
     .question-choice h5 {
-        text-align: left;
         font-size: 12px;
     }
 
     .question-choice h2 {
-        text-align: left;
         font-size: 20px;
     }
 
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
-        gap: 10px;
-        margin-top: 15px;
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+        gap: 12px;
+        margin-top: 16px;
     } 
 
     .grid button { 
-        width: 40px; 
-        height: 40px; 
-        font-weight: 600;
+        width: 44px; 
+        height: 44px;
+        font-size: 12px;
+    }
+
+    .submit-btn {
+        padding: 10px 23px;
+        font-size: 14px;
+        margin: 12px auto 0px auto;
+    }
+}
+
+@media (max-width: 844px) {
+    .body1 .main-test {
+        font-size: 48px;  
+        margin-top: 48px;
+        margin-left: 18px;
+    }
+
+    .body1 .container {
+        max-width: 70%;
+        padding: 18px 18px 18px 27px;
+    }
+
+    .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+        margin: 18px 0 9px 0;
+    }
+
+    .question-box .income p, .expenditure p, .savings p {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .question-box .slider-container {
+        margin-top: 6px;
+    }
+
+    .slider-labels {
+        font-size: 12px;
+    }
+
+    .range-value {
+        font-size: 12px;
+    }
+
+    .question-choice {
+        top: 80%;
+        right: 27px;
+        border-radius: 10px;
+        padding: 12px 18px;
+    }
+
+    .question-choice h5 {
+        font-size: 9px;
+    }
+
+    .question-choice h2 {
+        font-size: 15px;
+    }
+
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(33px, 1fr));
+        gap: 9px;
+        margin-top: 12px;
     } 
 
-    .submit-btn { 
-        padding: 10px 25px;
-        font-size: 15px;
+    .grid button { 
+        width: 33px; 
+        height: 33px;
+        font-size: 9px;
+    }
+
+    .submit-btn {
+        padding: 8px 17px;
+        font-size: 11px;
+        margin: 9px auto 0px auto;
     }
 }
 
 @media (max-width: 768px) {
     .body1 .main-test {
-        font-size: 59px;   
-        margin-top: 70px;
-        margin-left: 5px;
-        text-align: left;
+        font-size: 48px;  
+        margin-top: 46px;
+        margin-left: 18px;
     }
 
     .body1 .container {
-        flex: 1;
-        max-width: 65%;
-        padding: 30px 30px 30px 30px;
+        max-width: 70%;
+        padding: 18px 18px 18px 27px;
     }
 
     .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
-        width: 30px; 
-        height: 30px; 
-        margin: 20px 0 10px 0;
-        font-size: 12px;
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
+        margin: 18px 0 9px 0;
     }
 
     .question-box .income p, .expenditure p, .savings p {
-        font-size: 20px;
-        margin-bottom: 5px;
+        font-size: 15px;
+        margin-bottom: 6px;
     }
 
-    .range-value {
-        font-size: 13px;
+    .question-box .slider-container {
+        margin-top: 6px;
     }
 
     .slider-labels {
-        font-size: 15px;
-    }
-
-    .question-choice {
-        width: 30%;
-        position: fixed;
-        top: 60%;
-        right: 30px;
-    }
-
-    .question-choice h5 {
-        text-align: left;
         font-size: 12px;
     }
 
-    .question-choice h2 {
-        text-align: left;
-        font-size: 20px;
+    .range-value {
+        font-size: 12px;
     }
 
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
-        gap: 10px;
-        margin-top: 15px;
+    .question-choice {
+        top: 60%;
+        right: 27px;
+        border-radius: 10px;
+        padding: 12px 18px;
+    }
+
+    .question-choice h5 {
+        font-size: 9px;
+    }
+
+    .question-choice h2 {
+        font-size: 15px;
+    }
+
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(33px, 1fr));
+        gap: 9px;
+        margin-top: 12px;
     } 
 
     .grid button { 
-        width: 40px; 
-        height: 40px; 
-        font-weight: 600;
-    } 
+        width: 33px; 
+        height: 33px;
+        font-size: 9px;
+    }
 
-    .submit-btn { 
-        padding: 10px 25px;
-        font-size: 15px;
+    .submit-btn {
+        padding: 8px 17px;
+        font-size: 11px;
+        margin: 9px auto 0px auto;
     }
 }
 
 @media (max-width: 480px) {
     .body1 .main-test {
-        font-size: 59px;   
-        margin-top: 70px;
+        font-size: 23px;  
+        margin-top: 36px;
         margin-left: 5px;
-        text-align: left;
     }
 
     .body1 .container {
-        flex: 1;
-        max-width: 65%;
-        padding: 30px 30px 30px 30px;
+        max-width: 64%;
+        padding: 11px 11px 11px 17px;
     }
 
     .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
-        width: 30px; 
-        height: 30px; 
-        margin: 20px 0 10px 0;
-        font-size: 12px;
+        width: 15px;
+        height: 15px;
+        font-size: 7px;
+        margin: 11px 0 6px 0;
     }
 
     .question-box .income p, .expenditure p, .savings p {
-        font-size: 20px;
-        margin-bottom: 5px;
+        font-size: 9px;
+        margin-bottom: 6px;
     }
 
-    .range-value {
-        font-size: 13px;
+    .question-box .slider-container {
+        margin-top: -5px;
+        margin-bottom: 0px;
     }
 
     .slider-labels {
-        font-size: 15px;
+        font-size: 8px;
+        margin-top: -2px;
+    }
+
+    .range-input {
+        width: 100%;
+        height: 6px;
+        cursor: pointer;
+    }
+
+    .range-value {
+        font-size: 8px;
+        margin-bottom: 5px;
     }
 
     .question-choice {
-        width: 30%;
-        position: fixed;
         top: 60%;
-        right: 30px;
+        right: 17px;
+        border-radius: 6px;
+        padding: 8px 11px;
     }
 
     .question-choice h5 {
-        text-align: left;
-        font-size: 12px;
+        font-size: 6px;
     }
 
     .question-choice h2 {
-        text-align: left;
-        font-size: 20px;
+        font-size: 9px;
     }
 
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
-        gap: 10px;
-        margin-top: 15px;
+    .grid { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(21px, 1fr));
+        gap: 6px;
+        margin-top: 8px;
     } 
 
     .grid button { 
-        width: 40px; 
-        height: 40px; 
-        font-weight: 600;
-    } 
+        width: 21px; 
+        height: 21px;
+        font-size: 6px;
+    }
 
-    .submit-btn { 
-        padding: 10px 25px;
-        font-size: 15px;
+    .submit-btn {
+        padding: 5px 11px;
+        font-size: 7px;
+        margin: 6px auto 0px auto;
     }
 }
 
 /*---------------------*/
 /* MAIN TEST RESULTS */
 /*---------------------*/
-
 #resultType {
     font-family: TikTok Sans, sans-serif;
     font-size: 70px;
     font-weight: 700;
     color: #082a44;
     text-align: center;
-    margin: 50px 50px 50px 50px;
+    margin: 80px 120px 50px 120px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
@@ -1814,7 +2047,7 @@ input[type=range] {
     font-weight: 500;
     color: #082a44;
     text-align: justify;
-    margin: 0 70px 30px 70px;
+    margin: 0 120px 30px 120px;
 }
 
 #summary {
@@ -1823,7 +2056,7 @@ input[type=range] {
     font-weight: 500;
     color: #082a44;
     text-align: justify;
-    margin: 0 70px 50px 70px;
+    margin: 0 120px 50px 120px;
 }
 
 #summary b {
@@ -1844,6 +2077,95 @@ input[type=range] {
     margin: 30px auto 50px; /* 150px để chừa chỗ cho footer */
 }
 
+@media (max-width: 1024px) {
+    #resultType {
+        font-size: 56px;
+        margin: 64px 96px 40px 96px;
+        border-radius: 15px;
+        padding: 16px 24px;
+    }
+
+    #resultDesc {
+        font-size: 24px;
+        margin: 0 96px 24px 96px;
+    }
+
+    #summary {
+        font-size: 18px;
+        margin: 0 96px 40px 96px;
+    }
+
+    #needs, #wants, #savings {
+        font-size: 16px;
+    }
+
+    #spendingChart {
+        max-width: 400px;
+        width: 80%;
+        height: auto;
+        margin: 24px auto 40px; /* 150px để chừa chỗ cho footer */
+    }
+}
+
+@media (max-width: 768px) {
+    #resultType {
+        font-size: 42px;
+        margin: 48px 72px 30px 72px;
+        border-radius: 11px;
+        padding: 12px 18px;
+    }
+
+    #resultDesc {
+        font-size: 18px;
+        margin: 0 72px 18px 72px;
+    }
+
+    #summary {
+        font-size: 13px;
+        margin: 0 72px 30px 72px;
+    }
+
+    #needs, #wants, #savings {
+        font-size: 12px;
+    }
+
+    #spendingChart {
+        max-width: 500px;
+        width: 80%;
+        height: auto;
+        margin: 18px auto 30px; /* 150px để chừa chỗ cho footer */
+    }
+}
+
+@media (max-width: 480px) {
+    #resultType {
+        font-size: 24px;
+        margin: 32px 38px 24px 38px;
+        border-radius: 11px;
+        padding: 12px 18px;
+    }
+
+    #resultDesc {
+        font-size: 18px;
+        margin: 0 38px 4px 38px;
+    }
+
+    #summary {
+        font-size: 10px;
+        margin: 0 38px 24px 38px;
+    }
+
+    #needs, #wants, #savings {
+        font-size: 10px;
+    }
+
+    #spendingChart {
+        max-width: 500px;
+        width: 80%;
+        height: auto;
+        margin: 12px auto 24px; /* 150px để chừa chỗ cho footer */
+    }
+}
 /*---------------------*/
 /* BLOG */
 /*---------------------*/
@@ -1924,7 +2246,7 @@ input[type=range] {
 
 @media (max-width: 768px) {
     .blog-img {
-        height: 400px;
+        min-height: 400px;
     }
 
     .blog-img .title-blog {
@@ -1942,7 +2264,7 @@ input[type=range] {
 
 @media (max-width: 480px) {
     .blog-img {
-        height: 200px;
+        max-height: 200px;
     }
 
     .blog-img .title-blog {
