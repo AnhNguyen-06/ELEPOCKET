@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = document.querySelector(".submit-btn");
   const form = document.querySelector("form");
 
-  // Khi bấm nút Submit
   submitBtn.addEventListener("click", (e) => {
     // Thu nhập (câu 1)
     e.preventDefault();
@@ -39,42 +38,42 @@ document.addEventListener("DOMContentLoaded", () => {
     const percentWants = (wants / income) * 100;
     const percentSavings = (savings / income) * 100;
 
-    let resultType = "";
-    let resultDesc = "";
+    let resultTypeKey = "";
+    let resultDescKey = "";
 
     // 4. PHÂN LOẠI MỚI (LOGIC HÌNH PHỄU - WATERFALL)
     // Đảm bảo bao quát hết các trường hợp
     
-    // Nhóm 1: Áp lực tài chính (Needs quá cao)
+    // Nhóm 1: Thắt lưng buộc bụng (Needs quá cao)
     if (percentNeeds >= 75) {
-      resultType = "Áp lực tài chính";
-      resultDesc = "Bạn đang ở trạng thái 'Sinh tồn'. Phần lớn thu nhập (trên 75%) đang phải chi trả cho các nhu cầu thiết yếu, khiến việc tiết kiệm hay hưởng thụ trở nên khó khăn. Hãy tìm cách tối ưu chi phí sinh hoạt hoặc gia tăng thu nhập.";
+      resultTypeKey = "inde-type-tight";
+      resultDescKey = "inde-desc-tight";
     } 
     // Nhóm 2: Tiết kiệm (Savings cao - Bao gồm case 33/33/33)
     else if (percentSavings >= 30) {
-      resultType = "Tiết kiệm";
-      resultDesc = "Tuyệt vời! Bạn thuộc nhóm tiết kiệm xuất sắc. Với tỷ lệ tiết kiệm trên 30%, bạn đang xây dựng nền tảng tài chính vững chắc. Dù bạn đang sống tối giản hay có thu nhập cao, hãy tiếp tục duy trì phong độ này để sớm đạt tự do tài chính.";
+      resultTypeKey = "inde-type-frugal";
+      resultDescKey = "inde-desc-frugal";
     } 
     // Nhóm 3: Phung phí (Wants quá cao hoặc Savings quá thấp)
     else if (percentWants >= 50 || percentSavings < 5) {
-      resultType = "Phung phí";
-      resultDesc = "Cảnh báo: Bạn đang dành quá nhiều tiền cho sở thích cá nhân hoặc để dành quá ít (dưới 5%). Điều này rất rủi ro nếu gặp biến cố bất ngờ. Hãy cân nhắc cắt giảm các khoản chi vui chơi giải trí.";
+      resultTypeKey = "inde-type-overspending";
+      resultDescKey = "inde-desc-overspending";
     } 
-    // Nhóm 4: Hơi vượt mức (Tiết kiệm chưa đạt chuẩn an toàn)
+    // Nhóm 4: Hơi phung phí (Tiết kiệm chưa đạt chuẩn an toàn)
     else if (percentSavings < 15) {
-      resultType = "Hơi phung phí";
-      resultDesc = "Bạn chi tiêu hơi thoáng tay. Mức tiết kiệm hiện tại (dưới 15%) là chấp nhận được nhưng chưa tối ưu. Hãy cố gắng thắt chặt chi tiêu một chút để nâng mức tiết kiệm lên khoảng 20%.";
+      resultTypeKey = "inde-type-moderately-overspending";
+      resultDescKey = "inde-desc-moderately-overspending";
     } 
     // Nhóm 5: Hợp lý (Còn lại - Bao gồm case 50/30/20)
     else {
-      resultType = "Hợp lý";
-      resultDesc = "Xin chúc mừng! Bạn có cơ cấu tài chính cân bằng. Bạn tuân thủ tốt quy tắc 50/30/20, vừa đảm bảo nhu cầu cuộc sống, vừa có khoản hưởng thụ hợp lý mà vẫn tích lũy được cho tương lai.";
+      resultTypeKey = "inde-type-balanced";
+      resultDescKey = "inde-desc-balanced";
     }
 
     // 4. CHUẨN BỊ DỮ LIỆU GỬI ĐI
     const formData = new FormData(form);
     // Thêm các kết quả tính toán vào form để Netlify lưu lại luôn
-    formData.append("result-type", resultType);
+    formData.append("result-type", resultTypeKey);
     formData.append("final-savings", savings);
 
     // 5. GỬI DỮ LIỆU NGẦM VỀ NETLIFY (AJAX)
@@ -89,8 +88,8 @@ document.addEventListener("DOMContentLoaded", () => {
           needs,
           wants,
           savings,
-          resultType,
-          resultDesc
+          resultType: resultTypeKey,
+          resultDesc: resultDescKey,
         };
         sessionStorage.setItem("resultData", JSON.stringify(resultData));
 

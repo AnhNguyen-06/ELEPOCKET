@@ -55,6 +55,8 @@ const translations = {
         "reveal-levels": "The test reveals three main levels:",
         "three-levels": "Frugal spending → Reasonable spending → Wasteful spending",
 
+        "submit": "Submit",
+
         // Blog
         "page-blog-title": "Blog",
         "blog-1-title": "What even is ELEPOCKET?",
@@ -115,6 +117,49 @@ const translations = {
         "wants-3": "On average, how much do you spend per month on leisure activities or social outings with friends?",
         "savings-1": "On average, how much money do you save per month?",
         "savings-2": "On average, how much do you spend per month on investments or personal business capital?",
+
+        // Classify spending types
+        // Independent
+        "inde-type-tight": "Your type of spending is Tight spending",
+        "inde-desc-tight": "You are someone with a very TIGHT spending level! The results show that you spend most of your income on basic necessities, leaving very little for wants or savings. But do not worry, this is a common situation for many people, and it is only temporary. Try to balance your life by increasing your income or taking advantage of discounts and promotional services to improve your budget. You have got this!",
+        "inde-type-frugal": "Your type of spending is Frugal spending",
+        "inde-desc-frugal": "Your type of spending is FRUGAL spending! It is typical of frugal spenders to save money and avoid unnecessary expenses. Instead, you prefer a minimalistic spending style, with low spending rates and high saving ones. Although it is a positive sign of a healthy saving habit, you should also pay attention to other life qualities and sometimes spend money on new experiences.",
+        "inde-type-balanced": "Your type of spending is Balanced spending",
+        "inde-desc-balanced": "Your type of spending is BALANCED spending! The result shows that your spending rates follow a reasonable budgeting rule, which allows you to allocate money to your needs, wants and savings wisely. Keep going with this spending style, and you will gain a long-term sustainability in your personal finances.",
+        "inde-type-moderately-overspending": "Your type of spending is Moderately overspending",
+        "inde-desc-moderately-overspending": "Your type of spending is MODERATELY OVERSPENDING! The result shows that although you often spend on impulsive expenses beyond the recommended limit, your budget is still under control and can be adjusted to become more efficient.",
+        "inde-type-overspending": "Your type of spending is Overspending",
+        "inde-desc-overspending": "Warning!!! Your type of spending is OVERSPENDING! The result shows that your spending rates are much more significant than the saving ones, and they may surpass your amount of income. This is a warning sign for you to restructure your spending habits and focus on what is necessary for you to spend on.",
+        // Half-independent
+        "half-type-tight": "Your type of spending is Tight spending",
+        "half-desc-tight": "You are someone with a very TIGHT spending level! The results show that you spend most of your income on basic necessities, leaving very little for wants or savings. But do not worry, this is a common situation for many people, and it is only temporary. Try to balance your life by increasing your income or taking advantage of discounts and promotional services to improve your budget. You have got this!",
+        "half-type-frugal": "Your type of spending is Frugal spending",
+        "half-desc-frugal": "Your type of spending is FRUGAL spending! It is typical of frugal spenders to save money and avoid unnecessary expenses. Instead, you prefer a minimalistic spending style, with low spending rates and high saving ones. Although it is a positive sign of a healthy saving habit, you should also pay attention to other life qualities and sometimes spend money on new experiences.",
+        "half-type-balanced": "Your type of spending is Balanced spending",
+        "half-desc-balanced": "Your type of spending is BALANCED spending! The result shows that your spending rates follow a reasonable budgeting rule, which allows you to balance your needs and wants but still remain an adequate amount of savings. Even though you still currently rely on allowances, your wise budgeting skills and healthy saving habits will help you become a financially independent and savvy consumer - the person who takes full control of their pocket - in the future.",
+        "half-type-moderately-overspending": "Your type of spending is Moderately overspending",
+        "half-desc-moderately-overspending": "Your type of spending is MODERATELY OVERSPENDING! The result shows that although you often spend on impulsive expenses beyond the recommended limit, your budget is still under control and can be adjusted to become more efficient.",
+        "half-type-overspending": "Your type of spending is Overspending",
+        "half-desc-overspending": "Warning!!! Your type of spending is OVERSPENDING! The result shows that your spending rates are much more significant than the saving ones, and they may surpass your amount of income. This is a warning sign for you to restructure your spending habits and focus on what is necessary for you to spend on.",
+        // Dependent
+        "depe-type-essential-prioritize": "Your type of spending is Essential-prioritize spending",
+        "depe-desc-essential-prioritize": "You are someone who prioritizes ESSENTIAL spending! The results show that allocating most of your budget to food and transportation is completely reasonable at this stage. Your top priorities right now are your education and health, but you can still improve your finances by investing in yourself and building more effective saving habits. Keep going!",
+        "depe-type-frugal": "Your type of spending is Frugal spending",
+        "depe-desc-frugal": "Your type of spending is FRUGAL spending! It is typical of frugal spenders to save money and avoid unnecessary expenses. Even though you are still financially dependent, your impressive saving ratio shows that you manage your spending really well. Keep it up! And remember, it is totally okay  to  occassionally treat yourself to some new life experiences too!",
+        "depe-type-balanced": "Your type of spending is Balanced spending",
+        "depe-desc-balanced": "Your type of spending is BALANCED spending! The result shows that your spending rates follow a reasonable budgeting rule, which allows you to balance your needs and wants but still remain an adequate amount of savings. Even though you still currently rely on allowances, your wise budgeting skills and healthy saving habit will help you become a financially independent and savvy consumer - the person who takes full control of their pocket - in the future.",
+        "depe-type-moderately-overspending": "Your type of spending is Moderately overspending",
+        "depe-desc-moderately-overspending": "Your type of spending is moderately OVERSPENDING! The result shows that although you often spend on impulsive expenses beyond the recommended limit, your budget is still under control. With a few small adjustments, you can manage your spending much more effectively in the future!",
+        "depe-type-overspending": "Your type of spending is Overspending",
+        "depe-desc-overspending": "Warning!!! Your type of spending is OVERSPENDING! The result shows that your spending rates are much more significant than the saving ones, and they may surpass your amount of income. This is a warning sign for you to restructure your spending habits and focus on what is necessary for you to spend on.",
+    
+        // Loading effect
+        "loading-text": "Analyzing data...",
+
+        // Result
+        "summary-needs": "Needs:",
+        "summary-wants": "Wants:",
+        "summary-savings": "Savings:",
     },
     vi: {
         // Thanh điều hướng
@@ -148,7 +193,6 @@ const translations = {
         "vis-mes-des-2": "tập trung phân tích thói quen chi tiêu, tính toán tỷ lệ thu - chi và đánh giá mức độ  quản lý tài chính cá nhân của người dùng. Với đối tượng sử dụng chính là học sinh đang gặp khó khăn trong quản lý tài chính,",
         "vis-mes-des-3": "mong muốn  hỗ trợ người trẻ hình thành kỹ năng tài chính sớm, cũng như trở thành một công cụ giáo dục bổ trợ dành cho giáo viên và phụ huynh. Chúng tôi kỳ vọng sẽ mang lại tác động tích cực cho người dùng, tiếp cận 1000 học sinh và tăng 50% mức độ nhận diện thói quen tài chính ở học sinh các cấp THCS và THPT.",
 
-
         // Test nhanh
         "page-quicktest-title": "Test nhanh",
         "type-of-spending-test": "Test mức độ chi tiêu",
@@ -172,6 +216,8 @@ const translations = {
         "discover-spending": "Khám phá mức độ chi tiêu của bạn",
         "reveal-levels": "Bài test cho biết các mức độ chính:",
         "three-levels": "Chi tiêu tiết kiệm → Chi tiêu hợp lý → Chi tiêu lãng phí",
+
+        "submit": "Nộp bài",
 
         // Bài viết
         "page-blog-title": "Bài viết",
@@ -233,6 +279,49 @@ const translations = {
         "wants-3": "Mỗi tháng, bạn thường chi khoảng bao nhiêu cho các hoạt động vui chơi, hẹn hò cùng bạn bè?",
         "savings-1": "Mỗi tháng bạn tiết kiệm được khoảng bao nhiêu?",
         "savings-2": "Mỗi tháng, bạn chi khoảng bao nhiêu cho việc đầu tư, bỏ vốn kinh doanh cá nhân?",
+
+        // Phân loại chi tiêu
+        // Tự lập
+        "inde-type-tight": "Bạn là người chi tiêu Thắt lưng buộc bụng",
+        "inde-desc-tight": "Bạn là người có mức độ chi tiêu THẮT LƯNG BUỘC BỤNG đó nha! Kết quả cho thấy bạn chi tiêu hầu hết thu nhập cho các khoản nhu cầu cơ bản, chẳng còn bao nhiêu cho các khoản mong muốn hoặc tiết kiệm. Nhưng đừng lo lắng vì đây là tình trạng chung của rất nhiều người, và nó chỉ là tạm thời thôi. Hãy cố gắng cân bằng cuộc sống bằng cách nâng thu nhập hoặc tận dụng các ưu đãi, dịch vụ giảm giá để cải thiện ngân sách nhé. Cố lên!",
+        "inde-type-frugal": "Bạn là người chi tiêu Tiết kiệm",
+        "inde-desc-frugal": "Bạn là người có mức độ chi tiêu TIẾT KIỆM đó nha! Điều dễ nhận ra nhất ở người có thói quen chi tiêu tiết kiệm như bạn chính là để dành phần lớn thu nhập và tránh các khoản chi không cần thiết. Thay vào đó, bạn thiên về lối chi tiêu tối giản, với mức độ tiêu xài thấp nhưng tiết kiệm thì cao đó nha. Dù tiết kiệm là một thói quen tài chính tốt, bạn cũng nên quan tâm đến chất lượng cuộc sống của mình và lâu lâu tự “thưởng” cho mình những trải nghiệm sống mới mẻ nha!",
+        "inde-type-balanced": "Bạn là người chi tiêu Hợp lý",
+        "inde-desc-balanced": "Bạn là người có mức độ chi tiêu HỢP LÝ  đó nha! Kết quả cho thấy tỉ lệ chi tiêu của bạn bám sát theo nguyên tắc tài chính hợp lý, giúp bạn có thể phân bổ tiền vào các khoản cần thiết, mong muốn và tiết kiệm một cách khôn ngoan. Hãy tiếp tục giữ thói quen chi tiêu này nhen, và rồi bạn sẽ tiến gần hơn đến sự ổn định tài chính lâu dài sớm thôi. Cố lên!",
+        "inde-type-moderately-overspending": "Bạn là người chi tiêu Hơi phung phí",
+        "inde-desc-moderately-overspending": "Bạn là người có mức độ chi tiêu HƠI PHUNG PHÍ đó nha! Kết quả chỉ ra rằng dù bạn thường chi nhiều cho một số khoản không quá cần thiết, ngân sách của bạn vẫn đang trong tầm kiểm soát. Hãy thử điều chỉnh lại một chút để sau này chi tiêu hiệu quả hơn nhiều nha!",
+        "inde-type-overspending": "Bạn là người chi tiêu Phung phí",
+        "inde-desc-overspending": "Cảnh báo!!! Bạn là người có mức độ chi tiêu PHUNG PHÍ đó nha! Kết quả chỉ ra rằng tỉ lệ chi tiêu của bạn đang lớn hơn nhiều so với tiết kiệm, và có thể vượt lố thu nhập luôn. Đây là một dấu hiệu cảnh báo cho bạn điều chỉnh lại thói quen chi tiêu của mình và tập trung vào điều thật sự cần thiết cho cuộc sống thôi nhé. Cố lên!",
+        // Nửa tự lập
+        "half-type-tight": "Bạn là người chi tiêu Thắt lưng buộc bụng",
+        "half-desc-tight": "Bạn là người có mức độ chi tiêu THẮT LƯNG BUỘC BỤNG đó nha! Kết quả cho thấy bạn chi tiêu hầu hết thu nhập cho các khoản nhu cầu cơ bản, chẳng còn bao nhiêu cho các khoản mong muốn hoặc tiết kiệm. Nhưng đừng lo lắng vì đây là tình trạng chung của rất nhiều người, và nó chỉ là tạm thời thôi. Hãy cố gắng cân bằng cuộc sống bằng cách nâng thu nhập hoặc tận dụng các ưu đãi, dịch vụ giảm giá để cải thiện ngân sách nhé. Cố lên!",
+        "half-type-frugal": "Bạn là người chi tiêu Tiết kiệm",
+        "half-desc-frugal": "Bạn là một người có mức độ chi tiêu TIẾT KIỆM đó nha! Điều dễ nhận ra nhất ở người có thói quen chi tiêu tiết kiệm như bạn chính là để dành phần lớn thu nhập và tránh các khoản chi không cần thiết. Thay vào đó, bạn thiên về lối chi tiêu tối giản, với mức độ tiêu xài thấp nhưng tiết kiệm thì cao đó nha. Dù tiết kiệm là một thói quen tài chính tốt, bạn cũng nên quan tâm đến chất lượng cuộc sống của mình và lâu lâu tự “thưởng” cho mình những trải nghiệm sống mới mẻ nha!",
+        "half-type-balanced": "Bạn là người chi tiêu Hợp lý",
+        "half-desc-balanced": "Bạn là người có mức độ chi tiêu HỢP LÝ đó nha! Kết quả cho thấy tỉ lệ chi tiêu của bạn bám sát theo nguyên tắc tài chính hợp lý, giúp bạn có thể phân bổ tiền vào các khoản cần thiết, mong muốn và tiết kiệm một cách khôn ngoan. Hãy tiếp tục giữ thói quen chi tiêu này nhen, và rồi bạn sẽ tiến gần hơn đến sự ổn định tài chính lâu dài sớm thôi. Cố lên!",
+        "half-type-moderately-overspending": "Bạn là người chi tiêu Hơi phung phí",
+        "half-desc-moderately-overspending": "Bạn là người có mức độ chi tiêu HƠI PHUNG PHÍ đó nha! Kết quả chỉ ra rằng dù bạn thường chi nhiều cho một số khoản không quá cần thiết, ngân sách của bạn vẫn đang trong tầm kiểm soát. Hãy thử điều chỉnh lại một chút để sau này chi tiêu hiệu quả hơn nhiều nha!",
+        "half-type-overspending": "Bạn là người chi tiêu Phung phí",
+        "half-desc-overspending": "Cảnh báo!!! Bạn là người có mức độ chi tiêu PHUNG PHÍ đó nha! Kết quả chỉ ra rằng tỉ lệ chi tiêu của bạn đang lớn hơn nhiều so với tiết kiệm, và có thể vượt lố thu nhập luôn. Đây là một dấu hiệu cảnh báo cho bạn điều chỉnh lại thói quen chi tiêu của mình và tập trung vào điều thật sự cần thiết cho cuộc sống thôi nhé. Cố lên!",
+        // Phụ thuộc
+        "depe-type-essential-prioritize": "Bạn là người chi tiêu Ưu tiên thiết yếu",
+        "depe-desc-essential-prioritize": "Bạn là người có mức độ chi tiêu ƯU TIÊN CHI TIÊU THIẾT YẾU đó nha! Kết quả cho thấy bạn chi phần lớn ngân sách cho việc ăn uống, đi lại là hoàn toàn hợp lý trong giai đoạn này. Ưu tiên hàng đầu hiện tại là học tập và sức khỏe, nhưng bạn cũng có thể cải thiện thêm chi tiêu bằng cách đầu tư cho bản thân và rèn luyện thói quen tiết kiệm hiệu quả hơn đó. Cố lên!",
+        "depe-type-frugal": "Bạn là người chi tiêu Tiết kiệm",
+        "depe-desc-frugal": "Bạn là một người có mức độ chi tiêu TIẾT KIỆM đó nha! Dù cho còn phụ thuộc tài chính, nhưng tỉ lệ tiết kiệm ấn tượng cho thấy bạn biết phân bổ chi tiêu ổn áp đó chứ! Hãy tiếp tục phát huy, nhưng lâu lâu cũng phải tự “thưởng” cho bản thân những trải nghiệm sống mới mẻ nữa nha!",
+        "depe-type-balanced": "Bạn là người chi tiêu Hợp lý",
+        "depe-desc-balanced": "Bạn là người có mức độ chi tiêu HỢP LÝ đó nha! Kết quả cho thấy tỉ lệ chi tiêu của bạn bám sát theo nguyên tắc tài chính hợp lý, giúp bạn có thể phân bổ tiền vào các khoản cần thiết, mong muốn và tiết kiệm một cách khôn ngoan. Hãy tiếp tục giữ thói quen chi tiêu này nhen, và rồi bạn sẽ tiến gần hơn đến sự ổn định tài chính lâu dài sớm thôi. Cố lên!",
+        "depe-type-moderately-overspending": "Bạn là người chi tiêu Hơi phung phí",
+        "depe-desc-moderately-overspending": " Bạn là người có mức độ chi tiêu HƠI PHUNG PHÍ đó nha! Kết quả chỉ ra rằng dù bạn thường chi nhiều cho một số khoản không quá cần thiết, ngân sách của bạn vẫn đang trong tầm kiểm soát. Hãy thử điều chỉnh lại một chút để sau này chi tiêu hiệu quả hơn nhiều nha!", 
+        "depe-type-overspending": "Bạn là người chi tiêu Phung phí",
+        "depe-desc-overspending": "Cảnh báo!!! Bạn là người có mức độ chi tiêu PHUNG PHÍ đó nha! Kết quả chỉ ra rằng tỉ lệ chi tiêu của bạn đang lớn hơn nhiều so với tiết kiệm, và có thể vượt lố thu nhập luôn. Đây là một dấu hiệu cảnh báo cho bạn điều chỉnh lại thói quen chi tiêu của mình và tập trung vào điều thật sự cần thiết cho cuộc sống thôi nhé. Cố lên!",
+
+        // Hiệu ứng loading
+        "loading-text": "Đang phân tích dữ liệu...",
+
+        // Kết quả bài test
+        "summary-needs": "Nhu cầu:",
+        "summary-wants": "Mong muốn:",
+        "summary-savings": "Tiết kiệm:",
     }
 }
 

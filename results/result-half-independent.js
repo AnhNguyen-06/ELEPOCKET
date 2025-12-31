@@ -1,53 +1,62 @@
-const data = JSON.parse(sessionStorage.getItem("resultData"));
+document.addEventListener("DOMContentLoaded", () => {
+  const data = JSON.parse(sessionStorage.getItem("resultData"));
 
-if (!data) {
-  document.body.innerHTML = "<h3>Không có dữ liệu để hiển thị</h3>";
-} else {
-  document.getElementById("resultType").textContent = `Bạn là người chi tiêu ${data.resultType}`;
-  document.getElementById("resultDesc").textContent = data.resultDesc;
+  if (!data) {
+    document.body.innerHTML = "<h3>Không có dữ liệu để hiển thị / No data available</h3>";
+    return;
+  }
 
-  document.getElementById("needs").textContent = `${data.needs.toLocaleString("vi-VN")}`;
-  document.getElementById("wants").textContent = `${data.wants.toLocaleString("vi-VN")}`;
-  document.getElementById("savings").textContent = `${data.savings.toLocaleString("vi-VN")}`;
+  const typeEl = document.getElementById("resultType");
+  const descEl = document.getElementById("resultDesc");
 
-  document.getElementById("needs").style.fontFamily = "'TikTok Sans', sans-serif";
-  document.getElementById("wants").style.fontFamily = "'TikTok Sans', sans-serif";
-  document.getElementById("savings").style.fontFamily = "'TikTok Sans', sans-serif";
+  // 1. Gán Key để lang.js xử lý dịch thuật
+  typeEl.setAttribute("data-lang", data.resultType); 
+  descEl.setAttribute("data-lang", data.resultDesc);
 
+  // 2. Cập nhật các con số
+  document.getElementById("needs").textContent = data.needs.toLocaleString("de-DE");
+  document.getElementById("wants").textContent = data.wants.toLocaleString("de-DE");
+  document.getElementById("savings").textContent = data.savings.toLocaleString("de-DE");
+
+  // 3. Đọc ngôn ngữ và thực hiện dịch ngay lập tức
+  const currentLang = localStorage.getItem('selectedLang') || 'vi';
+  if (typeof changeLanguage === "function") {
+      changeLanguage(currentLang);
+  }
+
+  // --- CẤU HÌNH BIỂU ĐỒ ---
   Chart.defaults.font.family = "'TikTok Sans', sans-serif";
   Chart.defaults.font.size = 16;
   Chart.defaults.color = "#082a44";
+
+  const labels = currentLang === 'en' 
+    ? ["Needs", "Wants", "Savings"] 
+    : ["Nhu cầu", "Mong muốn", "Tiết kiệm"];
+
+  const chartTitle = currentLang === 'en' 
+    ? "Income Allocation" 
+    : "Phân bổ thu nhập";
 
   const ctx = document.getElementById("spendingChart");
   new Chart(ctx, {
     type: "pie",
     data: {
-      labels: ["Nhu cầu", "Mong muốn", "Tiết kiệm"],
+      labels: labels, // Sử dụng biến labels để dịch nhãn biểu đồ
       datasets: [{
         data: [data.needs, data.wants, data.savings],
+        backgroundColor: ["#187dc5", "#56a3d9", "#082a44"]
       }]
     },
     options: {
       responsive: true,
       plugins: {
-        legend: { 
-            position: "bottom",
-            labels: {
-                font: {
-                    family: "'TikTok Sans', sans-serif",
-                    size: 16
-                }
-            } 
-        },
+        legend: { position: "bottom" },
         title: { 
             display: true, 
-            text: "Phân bổ thu nhập",
-            font: {
-                family: "'TikTok Sans', sans-serif",
-                size: 20
-            }
+            text: chartTitle,
+            font: { size: 20 }
         }
       }
     }
   });
-}
+});

@@ -9,44 +9,45 @@
         <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
         <script src="result-independent.js" defer></script>
     </head>
-<body class="body">
-    <h2 id="resultType"></h2>
-    <p id="resultDesc"></p>
+    <body class="body">
+        <h2 id="resultType"></h2>
+        <p id="resultDesc"></p>
 
-    <canvas id="spendingChart"></canvas>
+        <canvas id="spendingChart"></canvas>
 
-    <div id="summary"> 
-        <p><b>Nhu cầu:</b> <span id="needs"></span></p> 
-        <p><b>Mong muốn:</b> <span id="wants"></span></p> 
-        <p><b>Tiết kiệm:</b> <span id="savings"></span></p> 
-    </div>
+        <div id="summary"> 
+            <p><b data-lang="summary-needs">Needs:</b> <span id="needs"></span></p> 
+            <p><b data-lang="summary-wants">Wants:</b> <span id="wants"></span></p> 
+            <p><b data-lang="summary-savings">Savings:</b> <span id="savings"></span></p> 
+        </div>
 
-    <footer class="contact-info">
-        <div class="contact-left">
-            <div class="logo-name">
-                <img src="../images/white-ava.png" alt="Logo ELEPOCKET" class="logo">
-                <a href="../index.html">
-                    <span class="name">ELEPOCKET</span>
-                </a>
+        <footer class="contact-info">
+            <div class="contact-left">
+                <div class="logo-name">
+                    <img src="../images/white-ava.png" alt="Logo ELEPOCKET" class="logo">
+                    <a href="../index.html">
+                        <span class="name">ELEPOCKET</span>
+                    </a>
+                </div>
+                <div class="phone-email">
+                    <p><span data-lang="contact-label">Contact</span>: 090 450 1805 (B.Tran) | 070 568 2288 (Q.Anh)</p>
+                    <p>Email: <a href="mailto:elepocketvn@gmail.com">elepocketvn@gmail.com</a></p>
+                </div>
             </div>
-            <div class="phone-email">
-                <p>Contact: 090 450 1805 (B.Tran) | 070 568 2288 (Q.Anh)</p>
-                <p>Email: <a href="mailto:elepocketvn@gmail.com">elepocketvn@gmail.com</a></p>
+            <div class="contact-center">
+                <h3 data-lang="footer-info-title">Contact info</h3>
             </div>
-        </div>
-        <div class="contact-center">
-            <h3>Contact info</h3>
-        </div>
-        <div class="contact-right">
-            <input type="text" placeholder="Search...">
-            <nav class="menu">
-                <a href="../index.html">Home</a>
-                <a href="../aboutus.html">About us</a>
-                <a href="../quicktest.html">Quick Test</a>
-                <a href="../blog.html">Blog</a>
-                <a href="../signup.html">Sign up</a>
-            </nav>
-        </div>
-    </footer>
-</body>
+            <div class="contact-right">
+                <input type="text" data-lang="search-placeholder" placeholder="Search...">
+                <nav class="menu">
+                    <a href="../index.html" data-lang="nav-home">Home</a>
+                    <a href="../aboutus.html" data-lang="nav-about">About us</a>
+                    <a href="../quicktest.html" data-lang="nav-quicktest">Quick Test</a>
+                    <a href="../blog.html" data-lang="nav-blog">Blog</a>
+                    <a href="../signup.html" data-lang="nav-signup">Sign up</a>
+                </nav>
+            </div>
+        </footer>
+        <script src="../lang.js"></script>
+    </body>
 </html>

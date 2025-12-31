@@ -20,6 +20,12 @@ body {
     background-size: cover;
     background-position: center;
     flex-direction: column;
+    animation: fadeInPage 0.8s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /*---------------------*/
@@ -429,14 +435,14 @@ input:checked + .slider:before {
     }
 
     .center h5 {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 500;
         margin-top: 10px;
     }
 
     .center .btn {
-        font-size: 10px;
-        padding: 6px 14px;
+        font-size: 15px;
+        padding: 10px 18px;
         margin: 10px auto;
     }
 
@@ -1945,9 +1951,9 @@ input[type=range] {
 
 @media (max-width: 480px) {
     .body1 .main-test {
-        font-size: 23px;  
+        font-size: 24px;  
         margin-top: 36px;
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .body1 .container {
@@ -1956,14 +1962,14 @@ input[type=range] {
     }
 
     .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .question10 {
-        width: 15px;
-        height: 15px;
-        font-size: 7px;
-        margin: 11px 0 6px 0;
+        width: 20px;
+        height: 20px;
+        font-size: 9px;
+        margin: 14px 0 8px 0;
     }
 
     .question-box .income p, .expenditure p, .savings p {
-        font-size: 9px;
+        font-size: 12px;
         margin-bottom: 6px;
     }
 
@@ -1973,7 +1979,7 @@ input[type=range] {
     }
 
     .slider-labels {
-        font-size: 8px;
+        font-size: 10px;
         margin-top: -2px;
     }
 
@@ -1984,7 +1990,7 @@ input[type=range] {
     }
 
     .range-value {
-        font-size: 8px;
+        font-size: 9px;
         margin-bottom: 5px;
     }
 
@@ -1996,31 +2002,68 @@ input[type=range] {
     }
 
     .question-choice h5 {
-        font-size: 6px;
+        font-size: 7px;
     }
 
     .question-choice h2 {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .grid { 
         display: grid; 
-        grid-template-columns: repeat(auto-fit, minmax(21px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(24px, 1fr));
         gap: 6px;
         margin-top: 8px;
     } 
 
     .grid button { 
-        width: 21px; 
-        height: 21px;
-        font-size: 6px;
+        width: 24px; 
+        height: 24px;
+        font-size: 8px;
     }
 
     .submit-btn {
-        padding: 5px 11px;
-        font-size: 7px;
+        padding: 6px 11px;
+        font-size: 9px;
         margin: 6px auto 0px auto;
     }
+}
+
+/*---------------------*/
+/* LOADING EFFECT */
+/*---------------------*/
+#loader-wrapper {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Nền trắng mờ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #082a44; /* Màu thương hiệu */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Class để ẩn loader */
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 /*---------------------*/
@@ -2536,5 +2579,21 @@ input[type=range] {
         text-align: center;
         font-size: 8px;
         margin: 10px 0 5px;
+    }
+}
+
+/* EFFECT FOR RESULTS PAGE */
+.container {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
