@@ -65,6 +65,33 @@ const translations = {
         "contact-label": "Contact",
         "footer-info-title": "Contact info",
 
+        // Blog 1
+        "title-blog-1": "SO WHAT EVEN IS ELEPOCKET?",
+        "welcome": "Welcome to the very first post on",
+        "introduce-team-1": "We - the",
+        "introduce-team-2": "team - are super excited to introduce to you",
+        "who": "who we are",
+        "what": "what this project is all about",
+        "started": "Let's get started!",
+
+        "the-team": "The team",
+        "the-team-1": "Founded by a group of Vietnamese students,",
+        "the-team-2": "is a website project with the mission of helping other students (including ourselves!) manage our personal finances. To make this happen, we have teamed up and contributed our best to the project, guided by our Board of Direction:",
+        "name-qa": "Nguyen Van Quang Anh",
+        "school-1-qa": "VNU-HCM University of Technology",
+        "school-2-qa": "Former student at VNU-HCM High School for the Gifted",
+        "role-qa": "Co-founder - Tech & Data",
+        "name-bt": "Tran Nguyen Bao Tran",
+        "school-bt": "VNU-HCM High School for the Gifted",
+        "role-bt": "Co-founder - PR & Product Research",
+
+        "why-title": "Why ELEPOCKET?",
+        "simple-thought": "It all started with a simple thought:",
+        "words": "“We want to create something helpful not only for other students but also for ourselves!”",
+        "spark-1": "From that spark, we have been working hard to turn",
+        "spark-2": "into a sustainable and practical tool - a true companion - for students to gain smarter budgeting and saving habits. Therefore, take our quick test right now to discover your type of spending and receive practical advice for your budgeting!",
+        "stay-tuned": "Stay tuned! You can never know our next moves :>",
+
         // Sign up - Sign in
         "sign-up-title": "Sign up",
         "sign-in-title": "Sign in",
@@ -94,7 +121,7 @@ const translations = {
         "start-test": "Got it | Start the test",
 
         // Classify users
-        "classify-question": "To provide you with the best experience and accurate results, we would like to know: when it comes to managing your expenses, which statement describes you best?",
+        "classify-question": "When it comes to managing your expenses, which statement describes you best?",
         "inde": "I'm financially independent",
         "half-inde": "I'm partly independent but still rely on others sometimes",
         "depe": "I rely completely on others for financial support",
@@ -227,6 +254,33 @@ const translations = {
         "contact-label": "Liên hệ",
         "footer-info-title": "Thông tin liên hệ",
 
+        // Bài viết 1
+        "title-blog-1": "RỐT CUỘC ELEPOCKET LÀ CÁI GÌ VẬY?",
+        "welcome": "Chào mừng bạn đến với bài post đầu tiên của",
+        "introduce-team-1": "Chúng mình - team",
+        "introduce-team-2": "đang rất hào hứng được giới thiệu đến các bạn về",
+        "who": "chúng mình là ai",
+        "what": "dự án này về cái gì",
+        "started": "Hãy cùng bắt đầu khám phá ngay thôi!",
+
+        "the-team": "Team",
+        "the-team-1": "Được thành lập bởi nhóm học sinh Việt Nam,",
+        "the-team-2": "là một dự án website với sứ mệnh giúp đỡ các bạn học sinh (gồm cả tụi mình) quản lý tài chính cá nhân. Để thực hiện nhiệm vụ này, chúng mình đã cùng nhau cống hiến cho dự án, với Ban điều hành gồm:",
+        "name-qa": "Nguyễn Văn Quang Anh",
+        "school-1-qa": "Trường Đại học Bách khoa - ĐHQG TP.HCM",
+        "school-2-qa": "Cựu học sinh trường Phổ thông Năng khiếu - ĐHQG TP.HCM",
+        "role-qa": "Đồng sáng lập - Kỹ thuật & Dữ liệu",
+        "name-bt": "Trần Nguyễn Bảo Trân",
+        "school-bt": "Trường Phổ thông Năng khiếu - ĐHQG TP.HCM",
+        "role-bt": "Đồng sáng lập - PR & Sản phẩm",
+
+        "why-title": "Vì sao lại là ELEPOCKET?",
+        "simple-thought": "Mọi chuyện bắt đầu với một suy nghĩ đơn thuần:",
+        "words": "“Tụi tui muốn làm gì đó có ích không chỉ cho các bạn học sinh khác mà còn cho chính tụi tui nữa”",
+        "spark-1": "Từ suy nghĩ đó, chúng mình đã làm việc chăm chỉ để biến",
+        "spark-2": "trở thành một công cụ bền vững và thực tế, là một người bạn đồng hành thực thụ giúp học sinh tụi mình chi tiêu thông minh hơn và rèn luyện thói quen tiết kiệm hợp lý. Vì vậy, còn chần chừ gì nữa mà không khám phá ngay quick test của chúng mình, để tìm hiểu mức độ chi tiêu của bản thân và nhận được những lời khuyên thiết thực nhất ngay nào!",
+        "stay-tuned": "Hãy chờ xem! Mọi người sẽ không thể biết tụi mình làm gì tiếp theo đâu :>",
+        
         // Đăng ký - Đăng nhập
         "sign-up-title": "Đăng ký",
         "sign-in-title": "Đăng nhập",
@@ -256,7 +310,7 @@ const translations = {
         "start-test": "Đã rõ | Bắt đầu test ngay",
 
         // Phân loại người dùng
-        "classify-question": "Để có kết quả chính xác nhất, hãy cho chúng mình biết: Đâu là câu miêu tả đúng nhất thói quen quản lý chi tiêu của bạn?",
+        "classify-question": "Đâu là câu miêu tả đúng nhất thói quen quản lý chi tiêu của bạn?",
         "inde": "Mình tự chủ tài chính hoàn toàn",
         "half-inde": "Tự lo được một phần, nhưng thỉnh thoảng vẫn cần gia đình hỗ trợ",
         "depe": "Vẫn phụ thuộc hoàn toàn vào chu cấp từ gia đình",

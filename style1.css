@@ -441,7 +441,7 @@ input:checked + .slider:before {
     }
 
     .center .btn {
-        font-size: 15px;
+        font-size: 16px;
         padding: 10px 18px;
         margin: 10px auto;
     }
@@ -634,30 +634,30 @@ input:checked + .slider:before {
     }
 
     .elephant .title-aboutus {
-        font-size: 30px;
+        font-size: 35px;
         top: 35%;
-        left: 24%;
+        left: 28%;
     }
 
     .quote {
-        margin-top: 15px;
+        margin-top: 18px;
     }
 
     .quote p {
-        font-size: 12px;
+        font-size: 16px;
     }
         
     .info-ele {
-        margin: 15px auto 15px auto;
+        margin: 18px auto 18px auto;
     }
 
     .info-ele h4 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .info-ele p {
-        font-size: 11px;
-        margin-top: 5px;
+        font-size: 16px;
+        margin-top: 7px;
     }
 
     .info-ele .about-us, .about-the-name, .vision-message {
@@ -691,7 +691,7 @@ input:checked + .slider:before {
 
 .theme-box-quicktest {
     margin: auto;
-    margin-top: 20px ;
+    margin-top: 20px;
     width: 85%;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -843,6 +843,7 @@ input:checked + .slider:before {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 100;
     height: 270px;
+    margin-top: auto;
 }
 
 .contact-left, .contact-center, .contact-right {
@@ -1197,7 +1198,7 @@ input:checked + .slider:before {
 
 @media (max-width: 480px) {
     .q-test .title-quicktest {
-        font-size: 30px;
+        font-size: 35px;
         margin-top: 50px;
     }
 
@@ -1209,7 +1210,7 @@ input:checked + .slider:before {
     }
 
     .theme-box-quicktest h5 {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .theme-box-quicktest h4 {
@@ -1218,18 +1219,18 @@ input:checked + .slider:before {
     }
 
     .theme-box-quicktest h3 {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 530;
         margin-top: 8px;
     }
 
     .theme-box-quicktest h2 {
-        font-size: 25px;
+        font-size: 28px;
         font-weight: 700;
     }
 
     .theme-box-quicktest .instructions {
-        font-size: 11px;
+        font-size: 16px;
     }
 
     .theme-box-quicktest li {
@@ -1237,8 +1238,8 @@ input:checked + .slider:before {
     }
 
     .theme-box-quicktest .btn {
-        font-size: 11px;
-        padding: 6px 14px;
+        font-size: 16px;
+        padding: 10px 18px;
         margin: 12px auto 5px auto;
     }
 
@@ -1259,33 +1260,33 @@ input:checked + .slider:before {
     }
 
     .theme-box-info-1 h3, .theme-box-info-2 h3, .theme-box-info-3 h3 {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .theme-box-info-1 p, .theme-box-info-2 p, .theme-box-info-3 p {
-        font-size: 11px;
+        font-size: 16px;
         margin-top: 5px;
     }
 
     .discover-spending h3 {
-        font-size: 23px;
+        font-size: 26px;
         font-weight: 700;
     }
 
     .discover-spending h4 {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 600;
     }
 
     .discover-spending h5 {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 500;
     }
 
     .info-test .discover-spending .btn {
-        font-size: 11px;
+        font-size: 15px;
         font-weight: 500;
-        padding: 6px 14px;
+        padding: 10px 18px;
         margin: 10px auto 20px auto;
     }
 
@@ -1507,7 +1508,7 @@ input:checked + .slider:before {
 }
 
 .classify h5 {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -1711,7 +1712,7 @@ input[type=range] {
 
 .grid button:hover {
     background: #4e8fe4;
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 .grid button.active { 
@@ -2257,7 +2258,6 @@ input[type=range] {
 }
 
 .blog-container {
-    font-family: 'TikTok Sans', sans-serif;
     max-width: 100%;
     margin: 40px 20px;
     padding: 0 20px;
@@ -2289,7 +2289,7 @@ input[type=range] {
 
 @media (max-width: 768px) {
     .blog-img {
-        min-height: 400px;
+        height: 400px;
     }
 
     .blog-img .title-blog {
@@ -2307,11 +2307,11 @@ input[type=range] {
 
 @media (max-width: 480px) {
     .blog-img {
-        max-height: 200px;
+        height: 200px;
     }
 
     .blog-img .title-blog {
-        font-size: 30px;
+        font-size: 35px;
         top: 35%;
         left: 22%;
     }
@@ -2362,6 +2362,422 @@ input[type=range] {
     font-size: 15px;
 }
 
+/*---------------------*/
+/* BLOG-1 */
+/*---------------------*/
+.intro-blog {
+    margin: 100px 100px 20px 100px;
+    color: #082a44;
+}
+
+.intro-blog .title-blog-1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    color: #082a44;
+    margin-bottom: 20px;
+}
+
+.intro-blog p {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+p .highlight {
+    font-weight: 700;
+}
+
+.team-why {
+    color: #082a44;
+    max-width: 100%;
+    margin: 0px 100px 60px 100px;
+}
+
+.team-why .team .team-title, .why .why-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-bottom: 0px;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.team-why .team .team-title::after, .why .why-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #082a44;
+    transition: width 0.3s ease-in-out;
+}
+
+.team-why .team .team-title:hover::after, .why .why-title:hover::after {
+    width: 100%;
+    color: #082a44;
+}
+
+.team-why .team p {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.team-why .team .intro-qa, .intro-bt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 30px;
+}
+
+.team-why .team .intro-qa .anh-qa, .intro-bt .anh-bt {
+    height: 800px;
+    width: auto;
+    border-radius: 15px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.team-why .team .intro-qa .anh-qa:hover, .intro-bt .anh-bt:hover {
+    transform: scale(1.02);
+}
+
+.team-why .team .intro-qa .intro-line-qa {
+    margin-left: 100px;
+    text-align: center;
+    flex: 1;
+}
+
+.intro-line-qa .name-qa, .intro-line-bt .name-bt {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+}
+
+.intro-line-qa .school-1-qa, .intro-line-bt .school-bt {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.intro-line-qa .school-2-qa {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.intro-line-qa .role-qa, .intro-line-bt .role-bt {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.team-why .team .intro-bt .intro-line-bt {
+    margin-right: 100px;
+    text-align: center;
+    flex: 1;
+}
+
+.why p {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.why .words {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400px;
+    font-style: italic;
+    margin: 10px auto;
+}
+
+.team-why .anh-2-dua {
+    height: 700px;
+    display: table;
+    margin: 0 auto;
+    width: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.team-why .anh-2-dua:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+    .intro-blog {
+        margin: 80px 70px 14px 70px;
+    }
+
+    .intro-blog .title-blog-1 {
+        font-size: 56px;
+        margin-bottom: 16px;
+    }
+
+    .intro-blog p {
+        font-size: 21px;
+    }
+
+    .team-why {
+        margin: 0px 70px 42px 70px;
+    }
+
+    .team-why .team .team-title, .why .why-title {
+        font-size: 50px;
+        margin-bottom: 14px;
+    }
+
+    .team-why .team .team-title::after, .why .why-title::after {
+        height: 2px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .team-why .team p {
+        font-size: 21px;
+    }
+
+    .team-why .team .intro-qa, .intro-bt {
+        margin: 28px 21px;
+    }
+
+    .team-why .team .intro-qa .anh-qa, .intro-bt .anh-bt {
+        height: 560px;
+    }
+
+    .team-why .team .intro-qa .anh-qa:hover, .intro-bt .anh-bt:hover {
+        transform: scale(1.02);
+    }
+
+    .team-why .team .intro-qa .intro-line-qa {
+        margin-left: 70px;
+    }
+
+    .intro-line-qa .name-qa, .intro-line-bt .name-bt {
+        font-size: 50px;
+    }
+
+    .intro-line-qa .school-1-qa, .intro-line-bt .school-bt {
+        font-size: 17px;
+        margin-top: 14px;
+    }
+
+    .intro-line-qa .school-2-qa {
+        font-size: 17px;
+        margin-top: 4px;
+    }
+
+    .intro-line-qa .role-qa, .intro-line-bt .role-bt {
+        font-size: 17px;
+        margin-top: 7px;
+    }
+
+    .team-why .team .intro-bt .intro-line-bt {
+        margin-right: 70px;
+    }
+
+    .why p {
+        font-size: 21px;
+    }
+
+    .why .words {
+        font-size: 20px;
+        margin: 7px auto;
+    }
+
+    .team-why .anh-2-dua {
+        height: 500px;
+        margin-top: 28px;
+    }
+
+    .team-why .anh-2-dua:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-blog {
+        margin: 70px 52px 11px 52px;
+    }
+
+    .intro-blog .title-blog-1 {
+        font-size: 43px;
+        margin-bottom: 9px;
+    }
+
+    .intro-blog p {
+        font-size: 18px;
+    }
+
+    .team-why {
+        margin: 0px 52px 31px 52px;
+    }
+
+    .team-why .team .team-title, .why .why-title {
+        font-size: 38px;
+        margin-bottom: 11px;
+    }
+
+    .team-why .team .team-title::after, .why .why-title::after {
+        height: 2px;
+        transition: width 0.2s ease-in-out;
+    }
+
+    .team-why .team p {
+        font-size: 18px;
+    }
+
+    .team-why .team .intro-qa, .intro-bt {
+        margin: 21px 16px;
+    }
+
+    .team-why .team .intro-qa .anh-qa, .intro-bt .anh-bt {
+        height: 420px;
+    }
+
+    .team-why .team .intro-qa .anh-qa:hover, .intro-bt .anh-bt:hover {
+        transform: scale(1.01);
+    }
+
+    .team-why .team .intro-qa .intro-line-qa {
+        margin-left: 52px;
+    }
+
+    .intro-line-qa .name-qa, .intro-line-bt .name-bt {
+        font-size: 38px;
+    }
+
+    .intro-line-qa .school-1-qa, .intro-line-bt .school-bt {
+        font-size: 15px;
+        margin-top: 11px;
+    }
+
+    .intro-line-qa .school-2-qa {
+        font-size: 15px;
+        margin-top: 3px;
+    }
+
+    .intro-line-qa .role-qa, .intro-line-bt .role-bt {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .team-why .team .intro-bt .intro-line-bt {
+        margin-right: 52px;
+    }
+
+    .why p {
+        font-size: 18px;
+    }
+
+    .why .words {
+        font-size: 17px;
+        margin: 4px auto;
+    }
+
+    .team-why .anh-2-dua {
+        height: 370px;
+        margin-top: 21px;
+    }
+
+    .team-why .anh-2-dua:hover {
+        transform: scale(1.01);
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-blog {
+        margin: 44px 32px 7px 32px;
+    }
+
+    .intro-blog .title-blog-1 {
+        font-size: 27px;
+        margin-bottom: 6px;
+    }
+
+    .intro-blog p {
+        font-size: 15px;
+    }
+
+    .team-why {
+        margin: 0px 32px 20px 32px;
+    }
+
+    .team-why .team .team-title, .why .why-title {
+        font-size: 24px;
+        margin-bottom: 7px;
+    }
+
+    .team-why .team .team-title::after, .why .why-title::after {
+        height: 1px;
+        transition: width 0.2s ease-in-out;
+    }
+
+    .team-why .team p {
+        font-size: 15px;
+    }
+
+    .team-why .team .intro-qa, .intro-bt {
+        margin: 13px 10px;
+    }
+
+    .team-why .team .intro-qa .anh-qa, .intro-bt .anh-bt {
+        height: 260px;
+    }
+
+    .team-why .team .intro-qa .anh-qa:hover, .intro-bt .anh-bt:hover {
+        transform: scale(1.01);
+    }
+
+    .team-why .team .intro-qa .intro-line-qa {
+        margin-left: 32px;
+    }
+
+    .intro-line-qa .name-qa, .intro-line-bt .name-bt {
+        font-size: 24px;
+    }
+
+    .intro-line-qa .school-1-qa, .intro-line-bt .school-bt {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+
+    .intro-line-qa .school-2-qa {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .intro-line-qa .role-qa, .intro-line-bt .role-bt {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+
+    .team-why .team .intro-bt .intro-line-bt {
+        margin-right: 32px;
+    }
+
+    .why p {
+        font-size: 15px;
+    }
+
+    .why .words {
+        font-size: 14px;
+        margin: 3px auto;
+    }
+
+    .team-why .anh-2-dua {
+        height: 200px;
+        margin-top: 16px;
+    }
+
+    .team-why .anh-2-dua:hover {
+        transform: scale(1.01);
+    }
+}
 /*---------------------*/
 /* SIGN IN - SIGN UP */
 /*---------------------*/
