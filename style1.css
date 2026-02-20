@@ -2778,10 +2778,317 @@ p .highlight {
         transform: scale(1.01);
     }
 }
+
+/*---------------------*/
+/* BLOG-2 */
+/*---------------------*/
+.title-blog-2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    color: #082a44;
+    margin-bottom: 20px;
+}
+
+.intro-ELEN {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.product-info, .thank-ELEN {
+    margin: 0px 100px 50px;
+    color: #082a44;
+}
+
+.product-info .image-ELEN {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.product-info .image-ELEN ul {
+    color: #082a44;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 100px;
+}
+
+.image-ELEN ul a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #082a44;
+    transition: 0.3s;
+}
+
+.image-ELEN ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.product-info .info-ELEN, .thank-ELEN .message-ELEN {
+    color: #082a44;
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    display: table;
+    margin: 0 auto;
+}
+
+.product-info .info-ELEN::after, .thank-ELEN .message-ELEN::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #082a44;
+    transition: width 0.3s ease-in-out;
+}
+
+.product-info .info-ELEN:hover::after, .thank-ELEN .message-ELEN:hover::after {
+    width: 100%;
+    color: #082a44;
+}
+
+.anh-ELEN-1 {
+    height: 600px;
+    width: auto;
+    border-radius: 15px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.thank-ELEN .visi-mess-ELEN {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.visi-mess-ELEN p {
+    font-size: 30px;
+    text-align: justify;
+
+}
+
+.anh-ELEN-2 {
+    position: relative;
+    display: inline-block;
+    display: table;
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    height: 500px;
+    width: auto;
+    border-radius: 15px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.anh-ELEN-1:hover, .anh-ELEN-2:hover {
+    transform: scale(1.01);
+}
+
+.thank-ELEN .btn {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 12px 28px;
+    border-radius: 100px;
+    background: #082a44;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.thank-ELEN .btn:hover {
+    transform: translateY(-2px);  
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 1024px) {
+    .title-blog-2 {
+        font-size: 56px;
+        margin-bottom: 14px;
+    }
+
+    .intro-ELEN {
+        font-size: 38px;
+        margin-bottom: 14px;
+    }
+
+    .product-info, .thank-ELEN {
+        margin: 0px 70px 35px;
+    }
+
+    .product-info .image-ELEN {
+        margin: 28px 0px;
+    }
+
+    .product-info .image-ELEN ul {
+        font-size: 21px;
+        margin-left: 70px;
+    }
+
+    .product-info .info-ELEN, .thank-ELEN .message-ELEN {
+        font-size: 38px;
+    }
+
+    .product-info .info-ELEN::after, .thank-ELEN .message-ELEN::after {
+        height: 2px;
+    }
+
+    .anh-ELEN-1 {
+        height: 420px;
+        border-radius: 11px;
+    }
+
+    .thank-ELEN .visi-mess-ELEN {
+        margin: 28px 0px;
+    }
+
+    .visi-mess-ELEN p {
+        font-size: 21px;
+    }
+
+    .anh-ELEN-2 {
+        margin-left: 70px;
+        margin-bottom: 14px;
+        height: 350px;
+        border-radius: 11px;
+    }
+
+    .thank-ELEN .btn {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 9px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-blog-2 {
+        font-size: 43px;
+        margin-bottom: 11px;
+    }
+
+    .intro-ELEN {
+        font-size: 30px;
+        margin-bottom: 11px;
+    }
+
+    .product-info, .thank-ELEN {
+        margin: 0px 54px 27px;
+    }
+
+    .product-info .image-ELEN {
+        margin: 22px 0px;
+    }
+
+    .product-info .image-ELEN ul {
+        font-size: 16px;
+        margin-left: 54px;
+    }
+
+    .product-info .info-ELEN, .thank-ELEN .message-ELEN {
+        font-size: 29px;
+    }
+
+    .anh-ELEN-1 {
+        height: 320px;
+        border-radius: 9px;
+    }
+
+    .thank-ELEN .visi-mess-ELEN {
+        margin: 21px 0px;
+    }
+
+    .visi-mess-ELEN p {
+        font-size: 16px;
+    }
+
+    .anh-ELEN-2 {
+        margin-left: 54px;
+        margin-bottom: 11px;
+        height: 270px;
+        border-radius: 9px;
+    }
+
+    .thank-ELEN .btn {
+        font-size: 14px;
+        padding: 7px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-blog-2 {
+        font-size: 27px;
+        margin-bottom: 7px;
+    }
+
+    .intro-ELEN {
+        font-size: 19px;
+        margin-bottom: 7px;
+    }
+
+    .product-info, .thank-ELEN {
+        margin: 0px 32px 16px;
+    }
+
+    .product-info .image-ELEN {
+        margin: 13px 0px;
+    }
+
+    .product-info .image-ELEN ul {
+        font-size: 12px;
+        margin-left: 32px;
+    }
+
+    .product-info .info-ELEN, .thank-ELEN .message-ELEN {
+        font-size: 17px;
+    }
+
+    .anh-ELEN-1 {
+        height: 200px;
+        border-radius: 6px;
+    }
+
+    .thank-ELEN .visi-mess-ELEN {
+        flex-direction: column;
+        margin: 13px 0px;
+    }
+
+    .visi-mess-ELEN p {
+        font-size: 12px;
+    }
+
+    .anh-ELEN-2 {
+        margin-top: 16px;
+        margin-bottom: 7px;
+        height: 170px;
+        border-radius: 6px;
+    }
+
+    .thank-ELEN .btn {
+        font-size: 10px;
+        padding: 4px 10px;
+    }
+}
 /*---------------------*/
 /* SIGN IN - SIGN UP */
 /*---------------------*/
-
 .login-box {
     margin: auto;
     width: 420px;

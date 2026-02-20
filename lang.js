@@ -62,6 +62,9 @@ const translations = {
         "blog-1-title": "What even is ELEPOCKET?",
         "blog-1-desc": "The first ELEBlog ever!",
 
+        "blog-2-title": "Official Announcement!",
+        "blog-2-desc": "ELEPOCKET's wallet is open for orders!",
+
         "contact-label": "Contact",
         "footer-info-title": "Contact info",
 
@@ -91,6 +94,25 @@ const translations = {
         "spark-1": "From that spark, we have been working hard to turn",
         "spark-2": "into a sustainable and practical tool - a true companion - for students to gain smarter budgeting and saving habits. Therefore, take our quick test right now to discover your type of spending and receive practical advice for your budgeting!",
         "stay-tuned": "Stay tuned! You can never know our next moves :>",
+
+        // Blog 2
+        "title-blog-2": "OFFICIAL ANNOUNCEMENT!!!",
+        "intro-ELEN": "ELEPOCKET's  wallet is open for orders!",
+        "launching-elen-1": "After months of preparing,",
+        "launching-elen-2": "is now launching our first producton our platform:",
+        "launching-elen-3": "handmade crochet wallet PREORDER. Making each wallet from cotton wool and great dedication, we aim to bring about the wallet that can be used as a “guardian” of your finances, reminding you of smart and mindful spending.",
+        "info-ELEN": "✿ Product info ✿",
+        "material": "Material: cotton yarn, magnetic metal button.",
+        "colors": "Colors: random light blue, white, or mixed (You may leave a note for your preferred color when placing a preorder).",
+        "size": "Size: Fits 5 - 10 ATM cards.",
+        "price": "Price: 65,000 VND per wallet. From the second wallet onward: 60,000 VND each.",
+        "order-1": "How to order: Fill out the PREORDER form",
+        "here": "here",
+        "order-2": ". Receive your order in 10-15 days.",
+        "message-ELEN": "✿ Thank you & Best wishes ✿",
+        "vision-ELEN-1": "In each wallet, we aim to give consumers hope and determination to reach our personal finance goals. We believe that",
+        "vision-ELEN-2": "will become a companion which is not only visually elegant and convenient for daily use, but also able to remind you of our moral 'Smart Budget - Sparks Power', encouraging you to treasure your money. Don't hesitate to place your order now!",
+        "order-button": "Order now!",
 
         // Sign up - Sign in
         "sign-up-title": "Sign up",
@@ -250,7 +272,8 @@ const translations = {
         "page-blog-title": "Bài viết",
         "blog-1-title": "ELEPOCKET là cái gì vậy?",
         "blog-1-desc": "Bài viết đầu tiên của tụi mình!",
-
+        "blog-2-title": "Chính thức!",
+        "blog-2-desc": "ELEPOCKET mở bán ví ELEN!",
         "contact-label": "Liên hệ",
         "footer-info-title": "Thông tin liên hệ",
 
@@ -281,6 +304,25 @@ const translations = {
         "spark-2": "trở thành một công cụ bền vững và thực tế, là một người bạn đồng hành thực thụ giúp học sinh tụi mình chi tiêu thông minh hơn và rèn luyện thói quen tiết kiệm hợp lý. Vì vậy, còn chần chừ gì nữa mà không khám phá ngay quick test của chúng mình, để tìm hiểu mức độ chi tiêu của bản thân và nhận được những lời khuyên thiết thực nhất ngay nào!",
         "stay-tuned": "Hãy chờ xem! Mọi người sẽ không thể biết tụi mình làm gì tiếp theo đâu :>",
         
+        // Bài viết 2
+        "title-blog-2": "CHÍNH THỨC!!!",
+        "intro-ELEN": "ELEPOCKET MỞ BÁN VÍ ELEN!",
+        "launching-elen-1": "Sau một thời gian dài ấp ủ,",
+        "launching-elen-2": "chúng mình bắt đầu dự án đầu tiên tại website quản lý chi tiêu: Mở bán ví len handmade",
+        "launching-elen-3": ". Với chất liệu sợi len cotton mềm mại, chúng mình mang đến sản phẩm ví đựng thẻ với vai trò là “người canh giữ đồng tiền”, gợi nhớ cho bạn về mục tiêu tiêu dùng thông minh.",
+        "info-ELEN": "✿ Mô tả sản phẩm ✿",
+        "material": "Chất liệu: Len cotton, nút bấm kim loại nam châm.",
+        "colors": "Màu sắc: Ngẫu nhiên xanh da trời, trắng hoặc kết hợp 2 màu (bạn có thể gửi lời nhắn về màu mong muốn trong đơn PREORDER).",
+        "size": "Kích thước: Đựng vừa 5 - 10 thẻ ATM.",
+        "price": "Giá thành: 65,000 VNĐ/ví. Từ ví thứ hai trở đi giá 60,000 VNĐ/ví.",
+        "order-1": "Cách thức đặt hàng: điền đơn PREORDER",
+        "here": "tại đây",
+        "order-2": ". Nhận hàng sau 10 - 15 ngày.",
+        "message-ELEN": "✿ Lời cảm ơn và nhắn gửi ✿",
+        "vision-ELEN-1": "Mỗi chiếc ví được trao đến tay người dùng chính là những chiếc “pocket” mang lại niềm tin và quyết tâm chạm đến mục tiêu quản lý tài chính cá nhân hiệu quả cho người sử dụng. Chúng tôi tin rằng",
+        "vision-ELEN-2": "sẽ trở thành một người bạn đồng hành không chỉ tinh tế về thẩm mỹ, tiện lợi cho sử dụng hằng ngày, mà còn gợi bạn nhớ đến thông điệp “Chi tiêu thông minh - Ví tiền rủng rỉnh” của chúng mình, giúp bạn có thêm tinh thần trân trọng khoản tiền dù lớn hay nhỏ của mình. Chần chờ gì nữa mà không đặt ngay một chiếc ví để dành tặng cho bản thân hoặc người mình thương ngay nào!",
+        "order-button": "Đặt hàng ngay!",
+
         // Đăng ký - Đăng nhập
         "sign-up-title": "Đăng ký",
         "sign-in-title": "Đăng nhập",
