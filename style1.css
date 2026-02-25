@@ -1734,7 +1734,7 @@ input[type=range] {
 }
 
 .submit-btn:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 @media (max-width: 1024px) {
@@ -2446,7 +2446,7 @@ p .highlight {
 }
 
 .team-why .team .intro-qa .anh-qa:hover, .intro-bt .anh-bt:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .team-why .team .intro-qa .intro-line-qa {
@@ -2506,7 +2506,7 @@ p .highlight {
 }
 
 .team-why .anh-2-dua:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 @media (max-width: 1024px) {
@@ -2550,7 +2550,7 @@ p .highlight {
     }
 
     .team-why .team .intro-qa .anh-qa:hover, .intro-bt .anh-bt:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
     }
 
     .team-why .team .intro-qa .intro-line-qa {
@@ -2595,7 +2595,7 @@ p .highlight {
     }
 
     .team-why .anh-2-dua:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
     }
 }
 
@@ -2980,7 +2980,7 @@ p .highlight {
 
 @media (max-width: 768px) {
     .title-blog-2 {
-        font-size: 43px;
+        font-size: 42px;
         margin-bottom: 11px;
     }
 
@@ -3056,6 +3056,10 @@ p .highlight {
         margin-left: 32px;
     }
 
+    .product-info .info-ELEN::after, .thank-ELEN .message-ELEN::after {
+        height: 1px;
+    }
+
     .product-info .info-ELEN, .thank-ELEN .message-ELEN {
         font-size: 17px;
     }
@@ -3086,6 +3090,404 @@ p .highlight {
         padding: 4px 10px;
     }
 }
+
+/*---------------------*/
+/* BLOG 3 */
+/*---------------------*/
+.title-blog-3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 600;
+    position: relative;
+    text-align: center;
+    color: #082a44;
+    margin-bottom: 20px;
+}
+
+.italic-blog3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.italic-p-blog3 {
+    font-style: italic;
+}
+
+.intro-qnhu, .interview-qnhu, .ending-blog3 {
+    margin: 20px 100px 20px 100px;
+    text-align: center;
+    color: #082a44;
+}
+
+.intro-qnhu-title, .interview-title, .ending-blog3-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 500;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.intro-qnhu-title::after, .interview-title::after, .ending-blog3-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #082a44;
+    transition: width 0.3s ease-in-out;
+}
+
+.intro-qnhu-title:hover::after, .interview-title:hover::after, .ending-blog3-title:hover::after {
+    width: 100%;
+    color: #082a44;
+}
+
+.info-qnhu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.anh-qnhu {
+    height: 800px;
+    width: auto;
+    border-radius: 15px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.intro-qnhu-list {
+    font-size: 30px;
+    margin-left: 100px;
+    text-align: justify;
+}
+
+.detailed-info-qnhu {
+    margin-left: 50px;
+}
+
+.bold-p {
+    font-weight: 600;
+}
+
+.anh-qnhu:hover {
+    transform: scale(1.01);
+}
+
+.chat-container {
+    width: 100%;
+    font-family: inherit;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.message.left { 
+    justify-items: flex-start; 
+}
+.message.right {
+    justify-content: flex-end;
+    margin-left: 300px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.bubble {
+    padding: 25px 25px;
+    width: fit-content;
+    font-size: 24px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    color: #082a44; /* Màu chữ đen/xanh đen cho dễ đọc trên nền sáng/mờ */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Viền mờ tạo cảm giác mặt kính */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message.left .bubble {
+    border-radius: 20px 20px 20px 0;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.message.right .bubble {
+    border-radius: 20px 20px 0 20px;
+    margin-right: 15px;
+    text-align: justify;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #082a44; 
+}
+
+.ending-blog3 p {
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #082a44;
+    border-radius: 15px;
+    padding: 20px 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .title-blog-3 {
+        font-size: 56px;
+        margin-bottom: 14px;
+    }
+
+    .intro-qnhu, .interview-qnhu, .ending-blog3 {
+        margin: 14px 70px 14px 70px;
+    }
+
+    .intro-qnhu-title, .interview-title, .ending-blog3-title {
+        font-size: 38px;
+        margin-bottom: 14px;
+    }
+
+    .intro-qnhu-title::after, .interview-title::after, .ending-blog3-title::after {
+        height: 2px;
+    }
+
+    .info-qnhu {
+        margin-top: 28px;
+    }
+
+    .anh-qnhu {
+        height: 560px;
+        border-radius: 11px;
+    }
+
+    .intro-qnhu-list {
+        font-size: 21px;
+        margin-left: 70px;
+    }
+
+    .detailed-info-qnhu {
+        margin-left: 35px;
+    }
+
+    .message {
+        margin-bottom: 18px;
+    }
+
+    .message.left {
+        margin-right: 210px;
+    }
+
+    .message.right {
+        margin-left: 210px;
+    }
+
+    .avatar {
+        width: 32px;
+        height: 32px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .bubble {
+        padding: 18px 18px;
+        font-size: 17px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    }
+
+    .message.left .bubble {
+        border-radius: 14px 14px 14px 0;
+        margin-left: 11px;
+    }
+
+    .message.right .bubble {
+        border-radius: 14px 14px 0 14px;
+        margin-right: 11px;
+    }
+
+    .ending-blog3 p {
+        font-size: 21px;
+        border-radius: 11px;
+        padding: 14px 21px;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-blog-3 {
+        font-size: 42px;
+        margin-bottom: 11px;
+    }
+
+    .intro-qnhu, .interview-qnhu, .ending-blog3 {
+        margin: 11px 56px 11px 56px;
+    }
+
+    .intro-qnhu-title, .interview-title, .ending-blog3-title {
+        font-size: 29px;
+        margin-bottom: 11px;
+    }
+
+    .intro-qnhu-title::after, .interview-title::after, .ending-blog3-title::after {
+        height: 2px;
+    }
+
+    .info-qnhu {
+        margin-top: 21px;
+    }
+
+    .anh-qnhu {
+        height: 420px;
+        border-radius: 8px;
+    }
+
+    .intro-qnhu-list {
+        font-size: 16px;
+        margin-left: 54px;
+    }
+
+    .detailed-info-qnhu {
+        margin-left: 27px;
+    }
+
+    .message {
+        margin-bottom: 14px;
+    }
+
+    .message.left {
+        margin-right: 160px;
+    }
+
+    .message.right {
+        margin-left: 160px;
+    }
+
+    .avatar {
+        width: 24px;
+        height: 24px;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    }
+
+    .bubble {
+        padding: 14px 14px;
+        font-size: 13px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .message.left .bubble {
+        border-radius: 11px 11px 11px 0;
+        margin-left: 8px;
+    }
+
+    .message.right .bubble {
+        border-radius: 11px 11px 0 11px;
+        margin-right: 8px;
+    }
+
+    .ending-blog3 p {
+        font-size: 16px;
+        border-radius: 8px;
+        padding: 11px 16px;
+        margin-bottom: 11px;
+    }   
+}
+
+@media (max-width: 480px) {
+    .title-blog-3 {
+        font-size: 27px;
+        margin-bottom: 7px;
+    }
+
+    .intro-qnhu, .interview-qnhu, .ending-blog3 {
+        margin: 7px 32px 7px 32px;
+    }
+
+    .intro-qnhu-title, .interview-title, .ending-blog3-title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .intro-qnhu-title::after, .interview-title::after, .ending-blog3-title::after {
+        height: 1px;
+    }
+
+    .info-qnhu {
+        margin-top: 13px;
+    }
+
+    .anh-qnhu {
+        height: 200px;
+        border-radius: 8px;
+    }
+
+    .intro-qnhu-list {
+        font-size: 12px;
+        margin-left: 32px;
+    }
+
+    .detailed-info-qnhu {
+        margin-left: 16px;
+    }
+
+    .message {
+        margin-bottom: 11px;
+    }
+
+    .message.left {
+        margin-right: 80px;
+    }
+
+    .message.right {
+        margin-left: 80px;
+    }
+
+    .avatar {
+        width: 20px;
+        height: 20px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .bubble {
+        padding: 11px 11px;
+        font-size: 10px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .message.left .bubble {
+        border-radius: 7px 7px 7px 0;
+        margin-left: 5px;
+    }
+
+    .message.right .bubble {
+        border-radius: 7px 7px 0 7px;
+        margin-right: 5px;
+    }
+
+    .ending-blog3 p {
+        font-size: 12px;
+        border-radius: 5px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 7px 11px;
+        margin-bottom: 7px;
+    }
+}
+
 /*---------------------*/
 /* SIGN IN - SIGN UP */
 /*---------------------*/
