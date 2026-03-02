@@ -3450,11 +3450,11 @@ p .highlight {
     }
 
     .message.left {
-        margin-right: 80px;
+        margin-right: 60px;
     }
 
     .message.right {
-        margin-left: 80px;
+        margin-left: 60px;
     }
 
     .avatar {
@@ -3465,7 +3465,7 @@ p .highlight {
 
     .bubble {
         padding: 11px 11px;
-        font-size: 10px;
+        font-size: 12px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
 
@@ -3480,7 +3480,7 @@ p .highlight {
     }
 
     .ending-blog3 p {
-        font-size: 12px;
+        font-size: 14px;
         border-radius: 5px;
         border: 1px solid rgba(255, 255, 255, 0.2);
         padding: 7px 11px;
