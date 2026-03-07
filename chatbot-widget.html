@@ -1,0 +1,36 @@
+<!-- Chatbot Widget HTML -->
+<!-- Thêm vào trong file index.html, trước </body> -->
+
+<!-- Floating Chat Button -->
+<button class="chatbot-floating-btn" id="chatbotToggle" title="Chat with ELEPOCKET Bot">
+  💬
+</button>
+
+<!-- Chat Window -->
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header">
+    <h3>ELEPOCKET Bot</h3>
+    <button class="chatbot-close-btn" id="chatbotClose">✕</button>
+  </div>
+  
+  <div class="chatbot-messages" id="chatbotMessages">
+    <!-- Welcome Message -->
+    <div class="chatbot-message bot">
+      <div class="chatbot-avatar" src="images/ava.png"></div>
+      <div class="chatbot-bubble">
+        Xin chào! 👋 Tôi là ELEPOCKET Bot. Tôi có thể giúp bạn về quản lý tài chính, quiz, hoặc bất cứ câu hỏi nào. Hãy hỏi tôi! 😊
+      </div>
+    </div>
+  </div>
+  
+  <div class="chatbot-input-area">
+    <input 
+      type="text" 
+      class="chatbot-input" 
+      id="chatbotInput" 
+      placeholder="Nhập câu hỏi của bạn..."
+      autocomplete="off"
+    />
+    <button class="chatbot-send-btn" id="chatbotSend">🐘</button>
+  </div>
+</div>
